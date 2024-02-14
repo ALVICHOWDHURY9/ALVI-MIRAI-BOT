@@ -273,7 +273,7 @@ module.exports = function({ api, models }) {
       const prefix = (threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX;
 
       //check body
-      if (event.body && event.body == `${prefix}request`) {
+      /*if (event.body && event.body == `${prefix}request`) {
         adminBot.forEach(e => {
           api.sendMessage(`» ID: ${event.threadID}\n» Requested approval! `, e);
         })
@@ -286,7 +286,7 @@ module.exports = function({ api, models }) {
 
 📑 Agar Approval Nahi 🙅🏻‍♂️ Mil Raha Hai To Mere Øwner🖤 Ko Direct Add Kar Sakte ho Fb Id link se 😊💖\n
 
-👋For Any Kind Of Help Contact On Telegram  Username 👉 @Priyanshrajput😇`, event.threadID);
+👋For Any Kind Of Help Contact On Telegram  Username 👉 @Priyanshrajput😇`, event.threadID);*/
     };
     switch (event.type) {
       case "message":
