@@ -1,15 +1,15 @@
- module.exports.config = {
+module.exports.config = {
 	name: "help2",
 	version: "1.0.2",
 	hasPermssion: 0,
-	credits: "PetterSever",
-	description: "Beginner's Guide",
-	commandCategory: "system",
-	usages: "[Tên module]",
-	cooldowns: 1,
+	credits: "ALVI",
+	description: "Beginner's Guide To All Bot Commands",
+	commandCategory: "System",
+	usages: "[ listbox ]",
+	cooldowns: 7,
 	envConfig: {
 		autoUnsend: true,
-		delayUnsend: 300
+		delayUnsend: 500
 	}
 };
 
@@ -60,7 +60,7 @@ module.exports. run = function({ api, event, args, getText }) {
     let msg = "";
     
     for (var [name, value] of (commands)) {
-      name += ``;
+      name += `🍒`;
       arrayInfo.push(name);
     }
 
@@ -70,10 +70,10 @@ module.exports. run = function({ api, event, args, getText }) {
     i = startSlice;
     const returnArray = arrayInfo.slice(startSlice, startSlice + numberOfOnePage);
     
-    for (let item of returnArray) msg += `✰『 ${++i} 』 ➬${item} \n`;
+    for (let item of returnArray) msg += `『 ${++i} 』${prefix}${item}\n`;
     
     
-    const siu = `Page Cmds  💯💯💖𝐌𝐚𝐝𝐞 𝐁𝐲 𝐀𝐫𝐮𝐧 𝐤𝐮𝐦𝐚𝐫`;
+    const siu = `╔━━❖❖💠❖❖━━╗\n  𝐀𝐥𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐋𝐢𝐬𝐭\n╚━━❖❖💠❖❖━━╝`;
     
  const text = `\nPage (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})`;
  
