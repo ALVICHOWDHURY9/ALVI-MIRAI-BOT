@@ -27,7 +27,7 @@ const port = process.env.PORT || 8080;
 
 // sendFile will go here
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'Alvi.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(port);
@@ -41,7 +41,7 @@ logger("Opened server site...", "[ Starting ]");
 function startBot(message) {
     (message) ? logger(message, "[ Starting ]") : "";
 
-    const child = spawn("node", ["--trace-warnings", "--async-stack-traces", "Alvi.js"], {
+    const child = spawn("node", ["--trace-warnings", "--async-stack-traces", "Priyansh.js"], {
         cwd: __dirname,
         stdio: "inherit",
         shell: true
@@ -90,4 +90,4 @@ startBot();
         startBot();
     } else logger('You are using the latest version!', '[ CHECK UPDATE ]'), startBot();
 }).catch(err => logger("Unable to check update.", "[ CHECK UPDATE ]"));*/
-// THIZ BOT WAS MADE BY ME(ALVI CHOWDHURY)- DO NOT STEAL MY CODE
+// THIZ BOT WAS MADE BY ME(Priyansh Rajput)- DO NOT STEAL MY CODE 💖🔱🕉️💌
