@@ -3,7 +3,7 @@ module.exports.config = {
 	name: "Alvi",
     version: "1.0.1",
 	hasPermssion: 0,
-	credits: "Arun", 
+	credits: "alvi", 
 	description: "no prefix",
 	commandCategory: "No command marks needed",
 	usages: "...",
