@@ -2,7 +2,7 @@ module.exports.config = {
   name: "help",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "𝙈𝙧𝙏𝙤𝙢𝙓𝙭𝙓",
+  credits: "ALVI",
   description: "Beginner's Guide",
   commandCategory: "Command list",
   usages: "[Module type]",
@@ -52,7 +52,7 @@ module.exports.handleEvent = function ({ api, event, args }) {
 » 🌟Belonging to the group: ${command.config.commandCategory}
 » ⏱Waiting time: ${command.config.cooldowns}
 » 👥Power: ${((command.config.hasPermssion == 0) ? `User` : (command.config.hasPermssion == 1) ? `Group administrator` : `BOT administrator`)}
-💥💢💥 Run By 𝙈𝙧𝙏𝙤𝙢𝙓𝙭𝙓 💥💢💥
+💥💢💥 Run By MR. ALVI CHOWDHURY 💥💢💥
 
 ●▬▬▬▬๑⇩⇩๑▬▬▬▬●
 
@@ -98,7 +98,7 @@ module.exports.run = function({ api, event, args }) {
     return axios.get('https://jrt-api.nguyenhaidang.ml/gaixinhvn').then(res => {
     let ext = res.data.data.substring(res.data.data.lastIndexOf(".") + 1);
     let callback = function () {
-        api.sendMessage({ body:`[⚜️] LIST OF ORDERS [⚜️]\n●▬▬▬▬๑☣️๑▬▬▬▬●\n\n` + msg + `●▬▬▬▬๑☢️๑▬▬▬▬●\n\n🏰🏰🏰 𝘾𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝘼𝙫𝙖𝙞𝙡𝙖𝙗𝙡𝙚: ${commands.size} 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙐𝙨𝙚𝙗𝙡𝙚 𝙄𝙣 𝙏𝙝𝙞𝙨 𝘽𝙤𝙩\n🤖𝙏𝙝𝙞𝙨 𝘽𝙤𝙩 𝙄𝙨 𝙍𝙪𝙣 𝘽𝙮 𝗠𝗥𝗧𝗢𝗠𝗫𝗫𝗫.\n[💟] 𝗛𝗲𝗿𝗲 𝗔𝗿𝗲 𝗔𝗹𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗜𝗻 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁. [❗]\n🔰𝗗𝗼 𝗡𝗼𝘁 𝗦𝗽𝗮𝗺 𝗢𝗿 𝗠𝗶𝘀 𝗨𝘀𝗲 𝗧𝗵𝗲 𝗕𝗼𝘁. 𝗢𝗿 𝗘𝗹𝘀𝗲 𝗬𝗼𝘂 𝗪𝗶𝗹𝗹 𝗕𝗲 𝗕𝗮𝗻𝗻𝗲𝗱 𝗕𝘆 𝗠𝗿𝗧𝗼𝗺𝗫𝗫𝘅[❗]\n📣ℍ𝕖𝕝𝕡 𝕎𝕚𝕝𝕝 𝔸𝕦𝕥𝕠𝕞𝕒𝕥𝕚𝕔𝕒𝕝𝕪 ℝ𝕖𝕞𝕠𝕧𝕖 𝔸𝕗𝕪𝕖𝕣 60𝕊𝕖𝕔 🏯🏯🏯\n\n●▬▬▬▬๑💛๑▬▬▬▬●\n\n[⚜️] 𝙏𝙄𝙈𝙀 [⚜️]\n${thu} || ${gio}`, 
+        api.sendMessage({ body:`[⚜️] LIST OF ORDERS [⚜️]\n●▬▬▬▬๑☣️๑▬▬▬▬●\n\n` + msg + `●▬▬▬▬๑☢️๑▬▬▬▬●\n\n🏰🏰🏰 𝘾𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝘼𝙫𝙖𝙞𝙡𝙖𝙗𝙡𝙚: ${commands.size} 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙐𝙨𝙚𝙗𝙡𝙚 𝙄𝙣 𝙏𝙝𝙞𝙨 𝘽𝙤𝙩\n🤖𝙏𝙝𝙞𝙨 𝘽𝙤𝙩 𝙄𝙨 𝙍𝙪𝙣 𝘽𝙮 𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n[💟] 𝗛𝗲𝗿𝗲 𝗔𝗿𝗲 𝗔𝗹𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗜𝗻 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁. [❗]\n🔰𝗗𝗼 𝗡𝗼𝘁 𝗦𝗽𝗮𝗺 𝗢𝗿 𝗠𝗶𝘀 𝗨𝘀𝗲 𝗧𝗵𝗲 𝗕𝗼𝘁. 𝗢𝗿 𝗘𝗹𝘀𝗲 𝗬𝗼𝘂 𝗪𝗶𝗹𝗹 𝗕𝗲 𝗕𝗮𝗻𝗻𝗲𝗱 𝗕𝘆 𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬[❗]\n📣ℍ𝕖𝕝𝕡 𝕎𝕚𝕝𝕝 𝔸𝕦𝕥𝕠𝕞𝕒𝕥𝕚𝕔𝕒𝕝𝕪 ℝ𝕖𝕞𝕠𝕧𝕖 𝔸𝕗𝕪𝕖𝕣 60𝕊𝕖𝕔 🏯🏯🏯\n\n●▬▬▬▬๑💛๑▬▬▬▬●\n\n[⚜️] 𝙏𝙄𝙈𝙀 [⚜️]\n${thu} || ${gio}`, 
             attachment: fs.createReadStream(__dirname + `/cache/472.${ext}`)
         }, event.threadID, (err, info) => {
         fs.unlinkSync(__dirname + `/cache/472.${ext}`);
@@ -172,7 +172,7 @@ return axios.get('https://jrt-api.nguyenhaidang.ml/gai').then(res => {
 » 🌟Belonging to the group: ${command.config.commandCategory}
 » ⏱Waiting time: ${command.config.cooldowns}
 » 👥Power: ${((command.config.hasPermssion == 0) ? `User` : (command.config.hasPermssion == 1) ? `Group administrator` : `BOT administrator`)}
-💥💢💥 Bot Owner 𝙈𝙧𝙏𝙤𝙢𝙓𝙭𝙓 💥💢💥
+💥💢💥 Bot Owner MR. ALVI CHOWDHURY 💥💢💥
 
 ●▬▬▬▬๑⇩⇩๑▬▬▬▬●
 
