@@ -1,4 +1,4 @@
-module.exports.config = {
+﻿module.exports.config = {
   name: "goiadmin",
   version: "1.0.0-beta-fixbyDungUwU",
   hasPermssion: 0,
@@ -9,11 +9,11 @@ module.exports.config = {
   cooldowns: 1
 };
 module.exports.handleEvent = function({ api, event }) {
-  if (event.senderID !== "100053330479434") {
-    var aid = ["100040426712109","100078234245540", "100065518342477","100013065791183" , "100064584243077"];
+  if (event.senderID !== "61551765804853","100088479080406","61551846081032") {
+    var aid = ["61551765804853","100088479080406","61551846081032"];
     for (const id of aid) {
     if ( Object.keys(event.mentions) == id) {
-      var msg = ["Abee Mere se baat Kar ..use mention kyu kar rhe ho😒", "Kya Hua Boss ko q Bula Rhe Ho?", "Wo Shayad Busy h😐🙄", "Tujhe sunai nhi deta mere admin ko tang na kr😒😒", "Mere boss ko tang naa karo", "Abee Bola na mere Admin ko bar bar mention mat karo ek bar me nahi smjh nahi ata", "Kya kaam hai mujhe bol", "Ek Baar me samjh ni ata , kyu mention kar rhe ho use" , "Mere Boss ko tang mt kiya kro smjhe😒"];
+      var msg = ["য়ামাল বস আলভী চৌধুরী কে এতো ডাকো কেন😒, ভালো টালো বাসো নাকি🤭", "য়ামাল বস আলভী চৌধুরী কে আর একবার মেনশন দিলে তোমার নাকের মধ্যে ঘুষি মারমু😡", " বস আলভী চৌধুরী এখন অফিস এর কাজে বিজি আছে যা বলার আমাকে বলো🫣", "যা বলার আমাকে বলো য়ামাল বস আলভী চৌধুরী এখন বিজি আছে🥰","বস আলভী চৌধুরী কে আর একবার মেনশন দিলে তোমারে থাবরাইয়া মুতের কালার চেঞ্জ কইরা ফালামু 🤭🙈🤖","বস আলভী চৌধুরী কই থুমি থুমারে এক বলদে ডাকে😁🤣"];
       return api.sendMessage({body: msg[Math.floor(Math.random()*msg.length)]}, event.threadID, event.messageID);
     }
     }}
