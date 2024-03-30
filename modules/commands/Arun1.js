@@ -1,6 +1,6 @@
  const fs = require("fs");
 module.exports.config = {
-	name: "Arun",
+	name: "Alvi",
     version: "1.0.1",
 	hasPermssion: 0,
 	credits: "Arun", 
@@ -13,15 +13,15 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("owner") ||
-     react.includes("Arun") || 
-react.includes("arun")) {
+	if(react.includes("alvi") ||
+     react.includes("Alvi") || 
+react.includes("ALVI")) {
 		var msg = {
-				body: "★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆★\n\n✦𝐀𝐫𝐮𝐧 𝐊𝐮𝐦𝐚𝐫✦\n\n★★᭄𝐘𝐨𝐮𝐭𝐮𝐛𝐞 𝐋𝐢𝐧𝐤 :\n\n✦ https://youtube.com/@MirryKal ✦ \n𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 𝗚𝗿𝗼𝘂𝗽 \n 𝗞𝗮𝗮𝗹 𝗟𝗼𝗸 😋https://www.facebook.com/groups/207371140648761/?ref=share_group_link`",
-				attachment: fs.createReadStream(__dirname + `/noprefix/kk1.jpg`)
+				body: "╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n\n🌺𝐁𝐎𝐓 𝐖𝐎𝐍𝐄𝐑🌺: 😽👉𝐌𝐑. 𝐀𝐋𝐕𝐈 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘👈😽 \n\n🌻𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐋𝐈𝐍𝐊🌻://https://www.facebook.com/PINIK.MR.ALVI.CHOWDHURY.YOUR.NEXT.VATAR.XAN\n\n🌼𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏🌼: 𝐖𝐀.𝐌𝐄/+60135647836 \n\n🌸𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌🌸: 𝐓.𝐌𝐄/+60135647836\n\n🔰𝐀𝐓𝐓𝐈𝐓𝐔𝐃𝐄 𝐊𝐈𝐍𝐆🔰: -যতটা খারাপ আমারে মনে করতাছো-🫰🔥 -এতোটা খারাপ আমি আলভী না-🤙😼 -এক মিনিট-🤞🔰 -ইতিহাস উঠায় দেখো আমি  আলভী এতো টাও ভালো না-🤟😾🔪\n\n╰──────•◈•───────╯",
+				attachment: fs.createReadStream(__dirname + `/noprefix/alvi.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("📷", event.messageID, (err) => {}, true)
+    api.setMessageReaction("😽", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
