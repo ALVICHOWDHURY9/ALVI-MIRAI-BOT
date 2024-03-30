@@ -32,10 +32,10 @@ const chalk = require ('chalk');
 
 const DateAndTime = new Date().toLocaleString('en-US', {
 
-         timeZone: 'Asia/Kolkata'
+         timeZone: 'Asia/Dhaka'
  }); 
 //console.log(DateAndTime);
-console.log(chalk.bold.hex("#0000FF").bold(`[DATE & TIME IN INDIA] » `)+ chalk.bold.hex("#0000FF").bold(DateAndTime));
+console.log(chalk.bold.hex("#0000FF").bold(`[DATE & TIME IN Bangladesh] » `)+ chalk.bold.hex("#0000FF").bold(DateAndTime));
 	
 
 //////////////////////////////////////////////////////
@@ -68,23 +68,23 @@ global.client = new Object({
   getTime: function (option) {
         switch (option) {
             case "seconds":
-                return `${moment.tz("Asia/Kolkata").format("ss")}`;
+                return `${moment.tz("Asia/Dhaka").format("ss")}`;
             case "minutes":
-                return `${moment.tz("Asia/Kolkata").format("mm")}`;
+                return `${moment.tz("Asia/Dhaka").format("mm")}`;
             case "hours":
-                return `${moment.tz("Asia/Kolkata").format("HH")}`;
+                return `${moment.tz("Asia/Dhaka").format("HH")}`;
             case "date": 
-                return `${moment.tz("Asia/Kolkata").format("DD")}`;
+                return `${moment.tz("Asia/Dhaka").format("DD")}`;
             case "month":
-                return `${moment.tz("Asia/Kolkata").format("MM")}`;
+                return `${moment.tz("Asia/Dhaka").format("MM")}`;
             case "year":
-                return `${moment.tz("Asia/Kolkata").format("YYYY")}`;
+                return `${moment.tz("Asia/Dhaka").format("YYYY")}`;
             case "fullHour":
-                return `${moment.tz("Asia/Kolkata").format("HH:mm:ss")}`;
+                return `${moment.tz("Asia/Dhaka").format("HH:mm:ss")}`;
             case "fullYear":
-                return `${moment.tz("Asia/Kolkata").format("DD/MM/YYYY")}`;
+                return `${moment.tz("Asia/Dhaka").format("DD/MM/YYYY")}`;
             case "fullTime":
-                return `${moment.tz("Asia/Kolkata").format("HH:mm:ss DD/MM/YYYY")}`;
+                return `${moment.tz("Asia/Dhaka").format("HH:mm:ss DD/MM/YYYY")}`;
         }
   }
 });
@@ -172,7 +172,7 @@ global.getText = function (...args) {
 }
 console.log(global.getText('mirai', 'foundPathAppstate'))
 try {
-    var appStateFile = resolve(join(global.client.mainPath, global.config.APPSTATEPATH || "appstate.json"));
+    var appStateFile = resolve(join(global.client.mainPath, global.config.APPSTATEPATH || "appistate.json"));
     var appState = require(appStateFile);
     logger.loader(global.getText("mirai", "foundPathAppstate"))
 }
@@ -256,10 +256,10 @@ const checking = require("fs");
       return;
     }
     const AutoOff = require("moment-timezone")
-  var timeOnAndOff = AutoOff.tz("Asia/Kolkata").format('HH:mm:ss')
+  var timeOnAndOff = AutoOff.tz("Asia/Dhaka").format('HH:mm:ss')
 
 cron.schedule('0 */1 * * * *', () => {
-  var timeToMessage = AutoOff.tz("Asia/Kolkata").format('HH:mm')
+  var timeToMessage = AutoOff.tz("Asia/Dhaka").format('HH:mm')
   if (timeToMessage == `${global.config.AutoOffBotStartSleep}`) {
     for (const sleeping of global.data.allThreadID) {
       setTimeout(() => {
@@ -272,15 +272,15 @@ cron.schedule('0 */1 * * * *', () => {
   }
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Dhaka"
 });
 
   if (timeOnAndOff > `${global.config.AutoOffBotStartSleep}:00` && timeOnAndOff <= `${global.config.AutoOffBotEndSleep}:00`) {
-    logger(`Your bot is Sleeping Mode until ${global.config.AutoOffBotEndSleep}. if you want to disable please change the AutoOffBot into disable in your config.json\n༻𝐎𝐖𝐍𝐄𝐑:- ☞Pãgâl Çhørå☜ ༺
+    logger(`Your bot is Sleeping Mode until ${global.config.AutoOffBotEndSleep}. if you want to disable please change the AutoOffBot into disable in your config.json\n༻𝐎𝐖𝐍𝐄𝐑:- ☞𝙼𝚁.𝙱𝙾𝚂𝚂 𝙰𝙻𝚅𝙸 𝙲𝙷𝙾𝚆𝙳𝙷𝚄𝚁𝚈☜ ༺
 ༒𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠 Em purv〠.༒
 
 ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- 
-☞ https://https://www.facebook.com/pagalchora143?mibextid=ZbWKwL`, "[ Sleep Mode ]")
+☞ https://www.facebook.com/PINIK.MR.ALVI.CHOWDHURY.YOUR.NEXT.VATAR.XAN`, "[ Sleep Mode ]")
     setInterval(() => {process.exit(1)}, 60000)
     return;
   }
@@ -1108,7 +1108,7 @@ cron.schedule(`57 1 */${global.config.RandomRedditMemesSendPerHour} * * *`, () =
     });
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Dhaka"
 });
   } else {
   console.log(chalk.bold.hex("#FF0000")("[ RANDOM REDDIT MEMES ] ❯ ") + chalk.hex("#FF0000")("is disable"))
