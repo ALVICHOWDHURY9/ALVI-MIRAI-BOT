@@ -11,5 +11,22 @@ module.exports.config = {
 
 module.exports.run = async ({ api, event, args }) => {
 	const { threadID, messageID } = event;
-	return api.sendMessage(`Wait Boss`, threadID, () => process.exit(1));
+	return api.sendMessage(`╭──────────────➣
+│𝗠𝗥.𝗔𝗟𝗩𝗜 𝗦𝗘𝗥𝗩𝗘𝗥 is
+│Trying To Restart...♻️
+│━━━━•🔰•━━━━┓
+│❖Restarting: in 6's
+│
+│
+│ ╔══╦╦╗─╔╦══╗
+│ ║╔╗║║╚╦╝╠║║╝
+│ ║╠╣║╚╗║╔╬║║╗
+│ ╚╝╚╩═╩═╝╚══╝
+│	     Restarted..
+│			 🄱🄾🅃
+│  Bot by ALVI
+│━━━━•♻️•━━━━┛
+│𝗠𝗥.𝗔𝗟𝗩𝗜 𝗦𝗘𝗥𝗩𝗘𝗥 is
+│Successfully Restarted
+╰──────────────➣`, threadID, () => process.exit(1));
 }
