@@ -1,9 +1,9 @@
 module.exports.config = {
-        name: "test",
+        name: "help",
         version: "1.0.2",
         hasPermssion: 0,
-        credits: "MR CHAND",
-        description: "FREE SET-UP MESSENGER ON YOUTUBE",
+        credits: "MR. ALVI CHOWDHURY",
+        description: "FREE SET-UP MESSENGER",
         commandCategory: "system",
         usages: "[Name module]",
         cooldowns: 5,
