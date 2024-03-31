@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "npdelete",
 	version: "1.0.1",
 	hasPermssion: 2,
-	credits: "NTkhang But recreate By Arun",
+	credits: "NTkhang But recreate By Alvi",
 	description: "Delete file or folder in noprefix folder",
 	commandCategory: "Admin-bot system",
 	usages: "\n noprefix start <text>\ncache ext <text>\ncache <text>\ncache [blank]\ncache help\nNOTE: <text> is the character you enter as you like",
@@ -36,8 +36,8 @@ module.exports.handleReply = ({ api, event, args, handleReply }) => {
 module.exports.run = async function({ api, event, args, Threads }) {
   
   const fs = require("fs-extra");
-  const permission = ["100040426712109"];
-  	if (!permission.includes(event.senderID)) return api.sendMessage("Ye command Tere liye Na Hai 😏👈🏻", event.threadID, event.messageID);
+  const permission = ["61551846081032"];
+  	if (!permission.includes(event.senderID)) return api.sendMessage("আরে মদন এই command শুধু আমার বস আলভী চৌধুরী'র জন্য_😏👈🏻", event.threadID, event.messageID);
   var files = fs.readdirSync(__dirname+"/noprefix") || [];
   var msg = "", i = 1;
   
