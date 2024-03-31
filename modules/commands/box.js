@@ -34,7 +34,7 @@ if(args[0] == "me"){
 	 if (args[1] == "admin") {
 		const threadInfo = await api.getThreadInfo(event.threadID)
 		const find = threadInfo.adminIDs.find(el => el.id == api.getCurrentUserID());
-		if(!find) api.sendMessage("𝐏𝐡𝐥𝐞 𝐀𝐝𝐦𝐢𝐧 𝐓𝐨 𝐁𝐚𝐧𝐚😒", event.threadID, event.messageID)
+		if(!find) api.sendMessage("BOT needs to throw admin to use ?", event.threadID, event.messageID)
 	  else if(!global.config.ADMINBOT.includes(event.senderID)) api.sendMessage("Cunt powers ?", event.threadID, event.messageID)
      else api.changeAdminStatus(event.threadID, event.senderID, true);
      }
@@ -51,7 +51,7 @@ const findd = threadInfo.adminIDs.find(el => el.id == namee);
 const find = threadInfo.adminIDs.find(el => el.id == api.getCurrentUserID());
 const finddd = threadInfo.adminIDs.find(el => el.id == event.senderID);
 
-if (!finddd) return api.sendMessage("𝐌𝐞 𝐁𝐬 𝐆𝐫𝐨𝐮𝐩 𝐊𝐞 𝐀𝐝𝐦𝐢𝐧 𝐤𝐞 𝐤𝐞𝐡𝐧𝐞 𝐩𝐞 𝐡𝐢 𝐘𝐞 𝐤𝐫𝐮𝐧𝐠𝐢😏", event.threadID, event.messageID);		
+if (!finddd) return api.sendMessage("You are not a box admin ?", event.threadID, event.messageID);		
 if(!find) {api.sendMessage("Don't throw the admin using the cock?", event.threadID, event.messageID)}
 if (!findd) {api.changeAdminStatus(event.threadID, namee, true);}
 else api.changeAdminStatus(event.threadID, namee, false)
@@ -116,4 +116,4 @@ const name = infu[qtv2[i].id].name;
 				.on('close', () => callback());
 
 	}	  
-                               }
+}
