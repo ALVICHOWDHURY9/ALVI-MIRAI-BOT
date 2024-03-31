@@ -42,7 +42,7 @@ module.exports.run = async function ({ api, event, args }) {
     )
   ).data;
 
-  const hmm = moment.tz("Asia/Kolkata").format("DD/MM/YYYY || HH:mm:ss");
+  const hmm = moment.tz("Asia/Dhaka").format("DD/MM/YYYY || HH:mm:ss");
   const { senderID, threadID, messageID, messageReply, type } = event;
   var name = args[0];
 
