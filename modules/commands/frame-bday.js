@@ -94,6 +94,6 @@ module.exports.run = async function ({ event, api, args }) {
 
 Many many happy 😊 returns of the day 🖤🖤🖤
  
-💕#ℍᗅℙℙℽ_ℬⅈℛᝨℍⅅay #_Dear_Friend  🎂🎂🎂🍰🍰\n\n╰──────•◈•───────╯`, attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+💕#ℍᗅℙℙℽ_ℬⅈℛᝨℍⅅay #_Dear_Friend  🎂🎂🎂🍰🍰\n\n𝗠𝗔𝗗𝗘 𝗕𝗬: 𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯`, attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
                                 }
