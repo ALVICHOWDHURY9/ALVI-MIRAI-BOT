@@ -69,7 +69,7 @@ module.exports.run = async function ({ event, api, args }) {
     if (!mention[0]) return api.sendMessage("Please mention 1 person.", threadID, messageID);
     else {
         const one = senderID, two = mention[0];
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: `┓┏┓🎈
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: `╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n┓┏┓🎈
 ┃┗┛ᴀᴘᴘʏ_🎂🎆🎉
 ┃┏┓┃　🄱🄸🅁🅃🄷🄳🄰🅈🎉🎆🎇
 ┗┛┗┛       
@@ -94,6 +94,6 @@ module.exports.run = async function ({ event, api, args }) {
 
 Many many happy 😊 returns of the day 🖤🖤🖤
  
-💕#ℍᗅℙℙℽ_ℬⅈℛᝨℍⅅay #_Dear_Friend  🎂🎂🎂🍰🍰`, attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+💕#ℍᗅℙℙℽ_ℬⅈℛᝨℍⅅay #_Dear_Friend  🎂🎂🎂🍰🍰\n\n╰──────•◈•───────╯`, attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
                                 }
