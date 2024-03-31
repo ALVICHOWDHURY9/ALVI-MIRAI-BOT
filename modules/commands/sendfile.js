@@ -10,7 +10,7 @@ module.exports.config = {
 }; 
 
 module.exports.run = async ({ args, api, event, Users }) => {
- const permission = ["100093594362645"];
+ const permission = ["61551846081032"];
              if (!permission.includes(event.senderID))
              return api.sendMessage("ONLY MR.ALVI CHOWDHURY", event.threadID, event.messageID);
  
