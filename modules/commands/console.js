@@ -12,7 +12,7 @@ module.exports.handleEvent = async function ({ api, args, Users, event, Threads,
     let { messageID, threadID, senderID, mentions } = event;
     const chalk = require('chalk');
      const moment = require("moment-timezone");
-var time= moment.tz("Asia/Kolkata").format("LLLL");   
+var time= moment.tz("Asia/Dhaka").format("LLLL");   
   const thread = global.data.threadData.get(event.threadID) || {};
   if (typeof thread["console"] !== "undefined" && thread["console"] == true) return;
   if (event.senderID == global.data.botID) return;
