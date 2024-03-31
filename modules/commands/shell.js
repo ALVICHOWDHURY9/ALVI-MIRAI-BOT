@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "shell",
 	version: "7.3.1",
 	hasPermssion: 2,
-	credits: "ALVI",
+	credits: "John Lester",
 	description: "running shell",
 	commandCategory: "System",
 	usages: "[shell]",
@@ -26,6 +26,6 @@ exec(`${text}`, (error, stdout, stderr) => {
         api.sendMessage(`stderr:\n ${stderr}`, event.threadID, event.messageID);
         return;
     }
-    api.sendMessage(`stdout:\n ${stdout}`, event.threadID, event.messageID);
+    api.sendMessage(`stdout done✅:\n ${stdout}`, event.threadID, event.messageID);
 });
 }
