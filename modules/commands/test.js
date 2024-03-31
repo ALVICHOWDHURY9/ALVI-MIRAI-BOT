@@ -1,76 +1,124 @@
 module.exports.config = {
-	name: "test",
-	version: "1.0.2",
-	hasPermssion: 0,
-	credits: "MR CHAND",
-	description: "FREE SET-UP MESSENGER ON YOUTUBE",
-	commandCategory: "system",
-	usages: "[Name module]",
-	cooldowns: 5,
-	envConfig: {
-		autoUnsend: true,
-		delayUnsend: 20
-	}
+        name: "test",
+        version: "1.0.2",
+        hasPermssion: 0,
+        credits: "MR CHAND",
+        description: "FREE SET-UP MESSENGER ON YOUTUBE",
+        commandCategory: "system",
+        usages: "[Name module]",
+        cooldowns: 5,
+        envConfig: {
+                autoUnsend: true,
+                delayUnsend: 20
+        }
 };
 
 module.exports.languages = {
-	"en": {
-		"moduleInfo": "「 %1 」\n%2\n\n❯ Usage: %3\n❯ Category: %4\n❯ Waiting time: %5 seconds(s)\n❯ Permission: %6\n\n» Module code by %7 «",
-		"helpList": '[ There are %1 commands on this bot, Use: "%2help nameCommand" to know how to use! ]',
-		"user": "User",
+ "en": {
+    "moduleInfo": "╭──────•◈•──────╮\n |        🄰🄻🅅🄸🄱🄾🅃\n |●𝗡𝗮𝗺𝗲: •—» %1 «—•\n |●𝗨𝘀𝗮𝗴𝗲: %3\n |●𝗗𝗲𝘀𝗰𝗿𝗶p𝘁𝗶𝗼𝗻: %2\n |●𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆: %4\n |●𝗪𝗮𝗶𝘁𝗶𝗻𝗴 𝘁𝗶𝗺𝗲: %5 seconds(s)\n |●𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻: %6\n |𝗠𝗼𝗱𝘂𝗹𝗲 𝗰𝗼𝗱𝗲 𝗯𝘆\n |•—» 𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬 «—•\n╰──────•◈•──────╯",
+    "helpList": '[ There are %1 commands on this bot, Use: "%2help nameCommand" to know how to use! ]',
+    "user": "User",
         "adminGroup": "Admin group",
         "adminBot": "Admin bot"
-	}
+  }
 };
 
 module.exports.handleEvent = function ({ api, event, getText }) {
-	const { commands } = global.client;
-	const { threadID, messageID, body } = event;
+ const { commands } = global.client;
+ const { threadID, messageID, body } = event;
 
-	if (!body || typeof body == "cmd" || body.indexOf("help") != 0) return;
-	const splitBody = body.slice(body.indexOf("help")).trim().split(/\s+/);
-	if (splitBody.length == 1 || !commands.has(splitBody[1].toLowerCase())) return;
-	const threadSetting = global.data.threadData.get(parseInt(threadID)) || {};
-	const command = commands.get(splitBody[1].toLowerCase());
-	const prefix = (threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX;
-	return api.sendMessage(getText("moduleInfo", command.config.name, command.config.description, `${prefix}${command.config.name} ${(command.config.usages) ? command.config.usages : ""}`, command.config.commandCategory, command.config.cooldowns, ((command.config.hasPermssion == 0) ? getText("user") : (command.config.hasPermssion == 1) ? getText("adminGroup") : getText("adminBot")), command.config.credits), threadID, messageID);
+ if (!body || typeof body == "undefined" || body.indexOf("help") != 0) return;
+ const splitBody = body.slice(body.indexOf("help")).trim().split(/\s+/);
+ if (splitBody.length == 1 || !commands.has(splitBody[1].toLowerCase())) return;
+ const threadSetting = global.data.threadData.get(parseInt(threadID)) || {};
+ const command = commands.get(splitBody[1].toLowerCase());
+ const prefix = (threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX;
+ return api.sendMessage(getText("moduleInfo", command.config.name, command.config.description, `${prefix}${command.config.name} ${(command.config.usages) ? command.config.usages : ""}`, command.config.commandCategory, command.config.cooldowns, ((command.config.hasPermssion == 0) ? getText("user") : (command.config.hasPermssion == 1) ? getText("adminGroup") : getText("adminBot")), command.config.credits), threadID, messageID);
 }
 
 module.exports. run = function({ api, event, args, getText }) {
-	const { commands } = global.client;
-	const { threadID, messageID } = event;
-	const command = commands.get((args[0] || "").toLowerCase());
-	const threadSetting = global.data.threadData.get(parseInt(threadID)) || {};
-	const { autoUnsend, delayUnsend } = global.configModule[this.config.name];
-	const prefix = (threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX;
+  const axios = require("axios");
+  const request = require('request');
+  const fs = require("fs-extra");
+ const { commands } = global.client;
+ const { threadID, messageID } = event;
+ const command = commands.get((args[0] || "").toLowerCase());
+ const threadSetting = global.data.threadData.get(parseInt(threadID)) || {};
+ const { autoUnsend, delayUnsend } = global.configModule[this.config.name];
+ const prefix = (threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX;
+if (args[0] == "all") {
+    const command = commands.values();
+    var group = [], msg = "";
+    for (const commandConfig of command) {
+      if (!group.some(item => item.group.toLowerCase() == commandConfig.config.commandCategory.toLowerCase())) group.push({ group: commandConfig.config.commandCategory.toLowerCase(), cmds: [commandConfig.config.name] });
+      else group.find(item => item.group.toLowerCase() == commandConfig.config.commandCategory.toLowerCase()).cmds.push(commandConfig.config.name);
+    }
+    group.forEach(commandGroup => msg += `❄️ ${commandGroup.group.charAt(0).toUpperCase() + commandGroup.group.slice(1)} \n${commandGroup.cmds.join(' • ')}\n\n`);
 
-	if (!command) {
-		const arrayInfo = [];
-		const page = parseInt(args[0]) || 1;
-    const numberOfOnePage = 9999;
+    return axios.get('https://loidsenpaihelpapi.miraiandgoat.repl.co').then(res => {
+    let ext = res.data.data.substring(res.data.data.lastIndexOf(".") + 1);
+      let admID = "61551846081032";
+
+      api.getUserInfo(parseInt(admID), (err, data) => {
+      if(err){ return console.log(err)}
+     var obj = Object.keys(data);
+    var firstname = data[obj].name.replace("@", "");
+    let callback = function () {
+        api.sendMessage({ body:`✿🄲🄾🄼🄼🄰🄽🄳 🄻🄸🅂🅃✿\n\n` + msg + `✿══════════════✿\n│𝗨𝘀𝗲 ${prefix}help [Name?]\n│𝗨𝘀𝗲 ${prefix}help [Page?]\n│𝗡𝗔𝗠𝗘 𝗢𝗪𝗡𝗘𝗥 : \n│𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n│𝗧𝗢𝗧𝗔𝗟 :  ${commands.size}\n————————————`, mentions: [{
+                           tag: firstname,
+                           id: admID,
+                           fromIndex: 0,
+                 }],
+            attachment: fs.createReadStream(__dirname + `/cache/472.${ext}`)
+        }, event.threadID, (err, info) => {
+        fs.unlinkSync(__dirname + `/cache/472.${ext}`);
+        if (autoUnsend == false) {
+            setTimeout(() => {
+                return api.unsendMessage(info.messageID);
+            }, delayUnsend * 1000);
+        }
+        else return;
+    }, event.messageID);
+        }
+         request(res.data.data).pipe(fs.createWriteStream(__dirname + `/cache/472.${ext}`)).on("close", callback);
+     })
+      })
+};
+ if (!command) {
+  const arrayInfo = [];
+  const page = parseInt(args[0]) || 1;
+    const numberOfOnePage = 15;
     let i = 0;
-    let msg = "╭────────╮\n👉🏻 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧 👈🏻\n╰────────╯\n🌝▬▬▬▬▬▬▬▬▬▬▬▬🌝\n";
-    
+    let msg = "";
+
     for (var [name, value] of (commands)) {
+      name += ``;
       arrayInfo.push(name);
     }
 
-    arrayInfo.sort((a, b) => a.data - b.data);
-    
-    const startSlice = numberOfOnePage*page - numberOfOnePage;
-    i = startSlice;
-    const returnArray = arrayInfo.slice(startSlice, startSlice + numberOfOnePage);
-  
-    for (let item of returnArray) msg += `   ╏  ${++i} ➥ ${item}\n`;
-    const randomText = [ "hy bhy baby","g","h"];
-    const text = `🌝▬▬▬▬▬▬▬▬▬▬▬▬🌝\n╭──────╮\n✅ 𝐏𝐀𝐆𝐄   (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})✅\n╰──────╯\n𝗧𝘆𝗽𝗲: °${prefix}𝗛𝗲𝗹𝗽°\n𝗧𝗼𝘁𝗮𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: ${arrayInfo.length} \n🌝▬▬▬▬▬▬▬▬▬▬▬▬🌝\n╭────────╮\n🙈 𝗡𝗔𝗠𝗘 𝗢𝗪𝗡𝗘𝗥 🙈\n╰────────╯  \n╭──────╮\n🥵 𝐌𝐑 𝐂𝐇𝐀𝐍𝐃 🥵\n╰──────╯\n🌝▬▬▬▬▬▬▬▬▬▬▬▬🌝 \n🌜𝐇𝐄𝐋𝐏 𝐆𝐑𝐎𝐔𝐏🌛\nhttps://chat.whatsapp.com/Gb2LLsL0KLGIjN4xhLyaVE\n\n🌜𝐇𝐄𝐋𝐏 𝐘𝐓🌛\nhttps://youtube.com/@chandtricker436\n🌝▬▬▬▬▬▬▬▬▬▬▬▬🌝 \n\n╭───────╮\n🥵 𝗙𝗢𝗥 𝗛𝗔𝗧𝗘𝗥𝗦 🥵\n╰───────╯ \n      𝗙𝗘𝗘𝗟 𝗧𝗛𝗘 𝗣𝗢𝗪𝗘𝗥 𝗢𝗙 𝗖𝗛𝗔𝗡𝗗 𝗧𝗥𝗜𝗖𝗞𝗘𝗥\n🌝▬▬▬▬▬▬▬▬▬▬▬▬🌝\n┎───────────┑\n ❘ 👑 𝐂𝐇𝐀𝐍𝐃-𝐕𝐈𝐒𝐈𝐎𝐍-‣⓰ 👑❘\n┗───────────┙\n🌝▬▬▬▬▬▬▬▬▬▬▬▬🌝`;
-    return api.sendMessage(msg  + text, threadID, async (error, info) => {
-			if (autoUnsend) {
-				await new Promise(resolve => setTimeout(resolve, delayUnsend * 10000));
-				return api.unsendMessage(info.messageID);
-			} else return;
-		});
-	}
+    arrayInfo.sort((a, b) => a.data - b.data);  
+const first = numberOfOnePage * page - numberOfOnePage;
+   i = first;
+   const helpView = arrayInfo.slice(first, first + numberOfOnePage);
 
-	return api.sendMessage(getText("moduleInfo", command.config.name, command.config.description, `${prefix}${command.config.name} ${(command.config.usages) ? command.config.usages : ""}`, command.config.commandCategory, command.config.cooldowns, ((command.config.hasPermssion == 0) ? getText("user") : (command.config.hasPermssion == 1) ? getText("adminGroup") : getText("adminBot")), command.config.credits), threadID, messageID);
+
+   for (let cmds of helpView) msg += `•—»[ ${cmds} ]«—•\n`;
+    const siu = `╭──────•◈•──────╮\n |        🄰🄻🅅🄸🄱🄾🅃 \n |   🄲🄾🄼🄼🄰🄽🄳 🄻🄸🅂🅃       \n╰──────•◈•──────╯`;
+const text = `╭──────•◈•──────╮\n│𝗨𝘀𝗲 ${prefix}help [Name?]\n│𝗨𝘀𝗲 ${prefix}help [Page?]\n│𝗡𝗔𝗠𝗘 𝗢𝗪𝗡𝗘𝗥 : \n│𝗠𝗥.𝗕𝗢𝗦𝗦 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n│𝗧𝗢𝗧𝗔𝗟 : [${arrayInfo.length}]\n│📛🄿🄰🄶🄴📛 :  [${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)}]\n╰──────•◈•──────╯`; 
+    var link = [
+"https://i.imgur.com/qQOh75b.gif", "https://i.imgur.com/qQOh75b.gif", "https://i.imgur.com/qQOh75b.gif", "https://i.imgur.com/qQOh75b.gif",
+"https://i.imgur.com/qQOh75b.gif",
+"https://i.imgur.com/qQOh75b.gif",
+"https://i.imgur.com/qQOh75b.gif",
+    ]
+     var callback = () => api.sendMessage({ body: siu + "\n\n" + msg  + text, attachment: fs.createReadStream(__dirname + "/cache/loidbutter.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/loidbutter.jpg"), event.messageID);
+    return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/loidbutter.jpg")).on("close", () => callback());
+ }
+const leiamname = getText("moduleInfo", command.config.name, command.config.description, `${(command.config.usages) ? command.config.usages : ""}`, command.config.commandCategory, command.config.cooldowns, ((command.config.hasPermssion == 0) ? getText("user") : (command.config.hasPermssion == 1) ? getText("adminGroup") : getText("adminBot")), command.config.credits);
+
+  var link = [
+"https://i.imgur.com/qQOh75b.gif",
+  ]
+    var callback = () => api.sendMessage({ body: leiamname, attachment: fs.createReadStream(__dirname + "/cache/loidbutter.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/loidbutter.jpg"), event.messageID);
+return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/loidbutter.jpg")).on("close", () => callback());
 };
