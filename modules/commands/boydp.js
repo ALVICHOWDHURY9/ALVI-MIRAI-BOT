@@ -2,7 +2,7 @@ module.exports.config = {
   name: "boydp",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "PREM BABU",
+  credits: "ALVI",
   description: "Boys Dp photos",
   commandCategory: "Random-IMG",
   usages: "Boy dp",
