@@ -46,7 +46,7 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
     ];
     let sticker = data[Math.floor(Math.random() * data.length)];
     let moment = require("moment-timezone");
-    let hours = moment.tz('Asia/Kolkata').format('HHmm');
+    let hours = moment.tz('Asia/Dhaka').format('HHmm');
     let session = (
     hours > 0001 && hours <= 400 ? "So jao baby, Itni Raat Ko Hy hlo kAr Rahe ho🥲" : 
     hours > 401 && hours <= 700 ? "Badi Jaldi Jaag Gye, 🙄" :
