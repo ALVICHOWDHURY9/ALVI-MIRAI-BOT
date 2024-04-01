@@ -131,16 +131,16 @@ registerFont(__dirname + `/cache/CaviarDreams.ttf`, {
     });
     ctx.textAlign = "start";
     ctx.font = "55px time";
-    ctx.fillText("ARUN", 930, 540)
-    ctx.fillText("Arun Kumar", 930, 610)
-    ctx.fillText("Arun Kumar", 930, 690)
+    ctx.fillText("ALVI", 930, 540)
+    ctx.fillText(" ALVI-CHOWDHURY", 930, 610)
+    ctx.fillText("ALVI-CHOWDHURY", 930, 690)
     ctx.restore();
     ctx.save();
     ctx.beginPath();
     const imageBuffer = canvas.toBuffer();
    fs.writeFileSync(pathImg, imageBuffer);
   return api.sendMessage({
-    body: `Server Information\n\nChip: ${chips}.\nProcessing Speed: ${speed}MHz.\n\nTotal Memory: ${byte2mb(os.totalmem())}.\nUsed: ${byte2mb(os.freemem())} (${(os.freemem() * 100 / os.totalmem()).toFixed()}%).\n\nBot is running up ${hours} hours ${minutes} minute ${seconds} seconds.\n\n❯ Total users: ${global.data.allUserID.length}\n❯ Total Group: ${global.data.allThreadID.length}\n❯ CPU in use: ${pidusage.cpu.toFixed(1)}%\n❯ Ram in use: ${byte2mb(pidusage.memory)}\n❯ Ping: ${Date.now() - timeStart}ms\n❯ Character ID: ${id}\n❯ Admin Faceboook:\n  https://www.facebook.com/arun.x76`,
+    body: `Server Information\n\nChip: ${chips}.\nProcessing Speed: ${speed}MHz.\n\nTotal Memory: ${byte2mb(os.totalmem())}.\nUsed: ${byte2mb(os.freemem())} (${(os.freemem() * 100 / os.totalmem()).toFixed()}%).\n\nBot is running up ${hours} hours ${minutes} minute ${seconds} seconds.\n\n❯ Total users: ${global.data.allUserID.length}\n❯ Total Group: ${global.data.allThreadID.length}\n❯ CPU in use: ${pidusage.cpu.toFixed(1)}%\n❯ Ram in use: ${byte2mb(pidusage.memory)}\n❯ Ping: ${Date.now() - timeStart}ms\n❯ Character ID: ${id}\n❯ Admin Faceboook:\n  https://www.facebook.com/PINIK.MR.ALVI.CHOWDHURY.YOUR.NEXT.VATAR.XAN`,
     attachment: fs.createReadStream(pathImg)
   },
     event.threadID,
