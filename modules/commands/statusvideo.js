@@ -1,11 +1,11 @@
 module.exports.config = {
-  name: "status",
+  name: "statusvideo",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "Modded By Arun",
   description: "RANDOM Status video",
   commandCategory: "Random video",
-  usages: "status",
+  usages: "Statusvideo",
   cooldowns: 2,
   dependencies: {
     "request":"",
