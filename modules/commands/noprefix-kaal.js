@@ -1,9 +1,9 @@
  const fs = require("fs");
 module.exports.config = {
-	name: "KaaLLok",
+	name: "Link",
     version: "1.0.1",
 	hasPermssion: 0,
-	credits: "Arun", 
+	credits: "ALVI", 
 	description: "no prefix",
 	commandCategory: "no prefix",
 	usages: "...",
@@ -15,10 +15,10 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	let react = event.body.toLowerCase();
 	if(react.includes("link") ||
      react.includes("facebook") || 
-react.includes("kaal")) {
+react.includes("lnk")) {
 		var msg = {
-				body: "💞𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 𝗚𝗿𝗼𝘂𝗽😋 \n 𝗞𝗮𝗮𝗹 𝗟𝗼𝗸 😋https://www.facebook.com/groups/207371140648761/?ref=share_group_link`",
-				attachment: fs.createReadStream(__dirname + `/noprefix/kl26.jpg`)
+				body: "╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n-ভালোবাসা নামক নষ্টামি করতে মন চাইলে-🤤💦 \n -আমার বস আলভী চৌধুরীর ইনবক্সে চলে যাও-🥵🫦 \n -এই নাও বস আলভী চৌধুরী'র ফেসবুক আইডির লিংক-👅👄\n\n\n👇\n\n\n ♻️-𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈'𝐃 𝐋𝐈𝐍𝐊-♻️:- https://www.facebook.com/PINIK.MR.ALVI.CHOWDHURY.YOUR.NEXT.VATAR.XAN 👈🔥\n\n𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯",
+				attachment: fs.createReadStream(__dirname + `/noprefix/alvi-2.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🫥", event.messageID, (err) => {}, true)
