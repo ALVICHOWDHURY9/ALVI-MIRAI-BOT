@@ -12,7 +12,7 @@ module.exports.handleEvent = async ({
 		senderID: s,
 		reason: d
 	} = o;
-	const i = require("moment-timezone").tz("Asia/Kolkata").format("HH:MM:ss L");
+	const i = require("moment-timezone").tz("Asia/Dhaka").format("HH:MM:ss L");
 	if (s == t.getCurrentUserID()) return;
 	let c = await n.getNameUser(o.senderID);
     //Sửa câu trả lời của Bạn
