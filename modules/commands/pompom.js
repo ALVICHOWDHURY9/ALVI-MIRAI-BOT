@@ -16,7 +16,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 event.body.indexOf("Pompom")==0 ||  event.body.indexOf("pompom")==0 ||  event.body.indexOf("Fider")==0 ||  
 event.body.indexOf("🍼")==0) {
 		var msg = {
-				body: "-ফিডার খাবি-😋-যাহ দিমুনা-🙈😼",
+				body: "╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n─•-ফিডার খাবি-😋\n-যাহ দিমুনা-🙈😼\n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯",
 				attachment: fs.createReadStream(__dirname + `/Alvi2/alvi-14.mp4`)
 			}
 			api.sendMessage( msg, threadID, messageID);
