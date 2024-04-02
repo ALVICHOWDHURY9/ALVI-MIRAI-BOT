@@ -1,24 +1,24 @@
 const fs = require("fs");
 module.exports.config = {
-  name: "chay",
+  name: "🏃‍♂️",
     version: "1.0.1",
   hasPermssion: 0,
-  credits: "VanHung - Fixed by LTD", 
+  credits: "VanHung - Fixed by Alvi", 
   description: "hihihihi",
   commandCategory: "no prefix",
-  usages: "tea",
+  usages: "🏃‍♀️",
     cooldowns: 5, 
 };
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
-  if (event.body.indexOf("chay")==0 || event.body.indexOf("Chay")==0 || event.body.indexOf("Tea")==0 || event.body.indexOf("tea")==0) {
+  if (event.body.indexOf("🏃‍♂️")==0 || event.body.indexOf("🏃‍")==0 || event.body.indexOf("🏃")==0 || event.body.indexOf("🏃‍♀️")==0) {
     var msg = {
         body: "ye lo baby",
-        attachment: fs.createReadStream(__dirname + `/noprefix/chay.mp4`)
+        attachment: fs.createReadStream(__dirname + `/Alvi2/alvi-10.mp4`)
       }
       api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("☕", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🏃‍♀️", event.messageID, (err) => {}, true)
     }
   }
   module.exports.run = function({ api, event, client, __GLOBAL }) {
