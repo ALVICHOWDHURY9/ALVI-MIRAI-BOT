@@ -6,7 +6,7 @@ module.exports.config = {
 	credits: "ALVI", 
 	description: "no prefix",
 	commandCategory: "no prefix",
-	usages: "...",
+	usages: "alvi1",
     cooldowns: 100, 
 };
 
@@ -21,7 +21,7 @@ react.includes("boss")) {
 				attachment: fs.createReadStream(__dirname + `/noprefix/alvi.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("🫥", event.messageID, (err) => {}, true)
+    api.setMessageReaction("😽", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
