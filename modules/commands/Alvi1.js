@@ -1,11 +1,11 @@
  const fs = require("fs");
 module.exports.config = {
-	name: "boss",
+	name: "Alvi1",
     version: "1.0.1",
 	hasPermssion: 0,
 	credits: "ALVI", 
 	description: "no prefix",
-	commandCategory: "No command marks needed",
+	commandCategory: "no prefix",
 	usages: "...",
     cooldowns: 100, 
 };
@@ -21,7 +21,7 @@ react.includes("boss")) {
 				attachment: fs.createReadStream(__dirname + `/noprefix/alvi.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("😽", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🫥", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
