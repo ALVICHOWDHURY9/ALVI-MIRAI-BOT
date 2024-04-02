@@ -1,9 +1,9 @@
 /** Đổi Credit ? Bọn t đã không mã hóa cho mà edit rồi thì tôn trọng nhau tý đi ¯\_(ツ)_/¯ **/
 module.exports.config = {
-  name: "kaal",
+  name: "alvi",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Ayush Shukla",
+  credits: "ALVI CHOWDHURY",
   description: "Random ảnh gái khi dùng dấu lệnh",
   commandCategory: "Hình ảnh",
   usages: "ig",
@@ -19,12 +19,12 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-   var hi = ["●▬▬๑۩۩ 𝐀𝐫𝐮𝐧 𝐊𝐮𝐦𝐚𝐫 IS MY BOSS۩۩๑▬▬😍😍😍 .... 😋😋😋😋 JOIN OUR FB GROUP ...KAAL LOK 👉🏻♦️ https://www.facebook.com/groups/207371140648761/?ref=share ✨"];
+   var hi = ["╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n•--••✿⃟✺⋆⃝💚𝄞𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬 𝗜𝗦 𝗠𝗬 𝗕𝗢𝗦𝗦𝄞⋆⃝💚••✿⃟✺\n\n⎯͢⎯⃝🩷🌻💚😽\n\n✿┼─🐼⛈️🖇️༊_আমাকে༎ভালো༎লাগে༎না༎ সমস্যা༎নাই༎﹏😊💜🌻🔐\n\n___ 🌺 ༅༎কারণ༎🧘‍♂️🚴‍♂️\n\n༊_আপনার༎ভালো༎লাগার༎জন্য༎আমার༎জন্ম༎হয়༎নাই༎﹏🤟😊🎭💙🦋🙂\n\n𝑰𝑻’𝑺 𝑴𝒀 𝑨𝑻𝑻𝑰𝑻𝑼𝑫𝑬\n\n⎯͢⎯⃝🩷🌻💚😽\n\n\nཐི༏ཋྀ𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺ཐི༏ཋྀ:-https://www.facebook.com/PINIK.MR.ALVI.CHOWDHURY.YOUR.NEXT.VATAR.XAN\n\nཐི༏ཋྀ𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿ཐི༏ཋྀ:-wa.me+60135647836\n\nཐི༏ཋྀ𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼ཐི༏ཋྀ:-https://www.instagram.com/alvixhowdhury420 \n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯"];
   var know = hi[Math.floor(Math.random() * hi.length)];
   var link = [
-  "https://i.postimg.cc/tTGGwwfJ/Picsart-23-03-26-11-08-19-025.jpg",
-    "https://i.postimg.cc/9Fx5CJzm/FB-IMG-1681795514766.jpg",
-    "https://i.postimg.cc/fL7pFv6h/FB-IMG-1681795528177.jpg",
+  "",
+    "",
+    "",
 ];
 	 var callback = () => api.sendMessage({body:`「 ${know} 」`,attachment: fs.createReadStream(__dirname + "/cache/kaal.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg"));	
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
