@@ -3,7 +3,7 @@ module.exports.config = {
 	name: "💋",
     version: "1.0.1",
 	hasPermssion: 0,
-	credits: "VanHung - Fixed by LTD", 
+	credits: "VanHung - Fixed by Alvi", 
 	description: "hihihihi",
 	commandCategory: "no prefix",
 	usages: "💋",
