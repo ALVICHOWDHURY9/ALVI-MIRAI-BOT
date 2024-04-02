@@ -1,6 +1,6 @@
 /** Đổi Credit ? Bọn t đã không mã hóa cho mà edit rồi thì tôn trọng nhau tý đi ¯\_(ツ)_/¯ **/
 module.exports.config = {
-  name: "alvi",
+  name: "alv",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "ALVI CHOWDHURY",
