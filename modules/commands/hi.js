@@ -63,7 +63,7 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
       tag: name,
       id: event.senderID
     })
-    let msg = {body: `আসসালামু আলাইকুম_🥰😍🌻 ${name}, কেমন আছেন_🤗❤️❤ ${session}`, mentions}
+    let msg = {body: `আসসালামু আলাইকুম_🥰😍🌻 ${name}, _🤗❤️❤ ${session}`, mentions}
     api.sendMessage(msg, event.threadID, (e, info) => {
       setTimeout(() => {
         api.sendMessage({sticker: sticker}, event.threadID);
