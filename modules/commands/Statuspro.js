@@ -3,7 +3,7 @@ module.exports.config = {
 	name: "statuspro",
     version: "1.0.1",
 	hasPermssion: 0,
-	credits: "VanHung - Fixed by Arun", 
+	credits: "VanHung - Fixed by Alvi", 
 	description: "hihihihi",
 	commandCategory: "no prefix",
 	usages: "bot ki id ko mention kro ya uska naam lo",
