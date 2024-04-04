@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "earn",
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "mr Chand",
+	credits: "ALVI CHOWDHURY",
 	description: "coin collection",
 	commandCategory: "Economy",
     cooldowns: 5,
