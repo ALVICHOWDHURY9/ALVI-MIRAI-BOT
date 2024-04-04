@@ -12,7 +12,7 @@ module.exports.config = {
 
 module.exports.run = async ({ args, api, event }) => {
 	const fs = require("fs-extra"); 
-  const permission = ["100046351269353", "100080294336334"];
+  const permission = ["61551846081032", "61551846081032"];
   	if (!permission.includes(event.senderID)) return api.sendMessage("You don't have permission to use this command", event.threadID, event.messageID);
 	var path = [],
 		pathrn = [],
