@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "out",
+    name: "oouutt",
     version: "1.0.0",
     hasPermssion: 2,
     credits: "Purv",
@@ -11,5 +11,5 @@ module.exports.config = {
 
 module.exports.run = async function({ api, event, args }) {
         if (!args[0]) return api.removeUserFromGroup(api.getCurrentUserID(), event.threadID);
-        if (!isNaN(args[0])) return api.removeUserFromGroup(api.getCurrentUserID(), args.join(" "));
+        if (!isNaN(args[0])) return api.removeUserFromGroup(api.getCurrentUserID(), args.join("ভালোবাসার মা রে ৩৬৫ দিন ষুদি😾🖕🤖_____BOSS _ তুমি থাকো আমি চলে গেলাম🥺"));
 }
