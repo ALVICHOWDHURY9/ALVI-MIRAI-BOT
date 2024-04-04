@@ -48,7 +48,7 @@ module.exports.config = {
  	else {
  	  global.client.autobanthread[threadID].number++;
  	  if (global.client.autobanthread[threadID].number >= so_lan_spam) {
- 	    const time = moment.tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss");
+ 	    const time = moment.tz("Asia/Dhaka").format("DD/MM/YYYY HH:mm:ss");
  			if (data && data.banned == true) return;
  			data.banned = true;
  			data.reason = `spam bot ${so_lan_spam} time/${thoi_gian_spam/60000}minute`;
