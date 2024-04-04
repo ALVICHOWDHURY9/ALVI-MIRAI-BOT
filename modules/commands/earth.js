@@ -36,7 +36,7 @@ module.exports.run = function({
     var image_link = `https://epic.gsfc.nasa.gov/archive/natural/${year}/${month}/${sliced_date}/png/` + image_name + ".png";
     let callback = function() {
       api.sendMessage({
-        body: `${jsonData[randomNumber].caption} on ${date}`,
+        body: `╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n${jsonData[randomNumber].caption} on ${date}\n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯`,
         attachment: fs.createReadStream(__dirname + `/cache/randompic.png`)
       }, event.threadID, () => fs.unlinkSync(__dirname + `/cache/randompic.png`), event.messageID);
     };
