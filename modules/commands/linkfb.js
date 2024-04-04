@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "linkfb",
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "Ishika",//mod by sen
+	credits: "ALVI",//mod by sen
 	description: "Get linkfb.",
 	commandCategory: "What does it do?",
 	cooldowns: 5
