@@ -4,7 +4,7 @@ module.exports.config = {
   name: "earth",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Aadi Gupta",
+  credits: "ALVI CHOWDHURY",
   description: "View the most recent images of the earth",
   commandCategory: "Thông tin",
   usages: "earth",
