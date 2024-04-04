@@ -2,7 +2,7 @@ module.exports.config = {
   name: "idst",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Sam",// Thay cái đỉ mẹ mày súc vật óc cặc mãi méo lớn
+  credits: "ALVI",// Thay cái đỉ mẹ mày súc vật óc cặc mãi méo lớn
   description: "Save sticker id",
   commandCategory: "sticker",
   usages: "[reply]",
