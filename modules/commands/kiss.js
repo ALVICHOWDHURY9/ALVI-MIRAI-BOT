@@ -2,7 +2,7 @@ module.exports.config = {
     name: "kiss",
     version: "2.0.0",
     hasPermssion: 0,
-    credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+    credits: "ALVI CHOWDHURY",
     description: "Kiss the person you want",
     commandCategory: "Love",
     usages: "kiss [tag]",
@@ -74,6 +74,6 @@ module.exports.run = async function ({ event, api, args, Currencies }) {
 
   if (!two) return api.sendMessage("Please tag 1 person", threadID, messageID);
   else {
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: `[❤️] The level of affection between you and that person is: ${hc} %\n[❤️] The two of you are blessed by BOT: ${((hc)*rd)} $\n[❤️] Wish you happy 🍀`, attachment: fs.createReadStream(path)}, threadID, () => fs.unlinkSync(path), messageID));
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: ╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n${hc} %\n[❤️] The two of you are blessed by BOT: ${((hc)*rd)} $\n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯`, attachment: fs.createReadStream(path)}, threadID, () => fs.unlinkSync(path), messageID));
   }
 }
