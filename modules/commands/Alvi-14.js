@@ -1,12 +1,12 @@
 const fs = require("fs");
 module.exports.config = {
-	name: "☺️",
+	name: "Alvi-14",
     version: "1.0.1",
 	hasPermssion: 0,
 	credits: "ALVI", 
 	description: "hihihihi",
 	commandCategory: "no prefix",
-	usages: "☺️",
+	usages: "alvi-14",
     cooldowns: 5, 
 };
 
