@@ -69,6 +69,6 @@ module.exports.run = async function ({ event, api, args }) {
     if (!mention[0]) return api.sendMessage("Please mention 1 person.", threadID, messageID);
     else {
         const one = senderID, two = mention[0];
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "◦•●◉✿Ye lo apka Frame Logo✿◉●•◦", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n⎯͢⎯⃝💜🪽\n\n_হারিয়ে যাওয়া স্মৃতি মনে করতে করতেই মানুষ বুড়ো হয়ে যায়..। হারিয়ে যাওয়ার পর আর নতুন করে হারানোর সময়ই থাকে না...!😌\n\n🖇️👑🌸\n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
                                 }
