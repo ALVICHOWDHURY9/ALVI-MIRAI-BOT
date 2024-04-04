@@ -28,6 +28,6 @@ const fs = global.nodemodule["fs-extra"];
 
 -🌻যার কাছে হাজার অপশন থাকলেও একমাত্র চয়েস হবো আমি" 😚-║-💚🥀
 
-....🖤🤍\n\n𝗠𝗔𝗗𝗘 𝗕𝗬:\n            𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯`,attachment: fs.createReadStream(__dirname + "/cache/1.mp4")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.mp4"));
+....🖤🤍\n\n𝗠𝗔𝗗𝗘 𝗕𝗬:\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯`,attachment: fs.createReadStream(__dirname + "/cache/1.mp4")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.mp4"));
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.mp4")).on("close",() => callback());
    };
