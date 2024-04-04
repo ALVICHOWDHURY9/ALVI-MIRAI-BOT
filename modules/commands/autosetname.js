@@ -2,7 +2,7 @@ module.exports.config = {
     name: "autosetname",
     version: "1.0.1",
     hasPermssion: 1,
-    credits: "BLACK",
+    credits: "ALVI",
     description: "Automatic setname for new members",
     commandCategory: "Group",
     usages: "[add <name> /remove] ",
