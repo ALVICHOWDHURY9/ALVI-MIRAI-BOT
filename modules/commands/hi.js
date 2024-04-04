@@ -15,13 +15,13 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
     "hi",
     "hy",
     "hlo",
-    "chao",
+    "Hello",
     "👋",
-    "híí",
-    "hì",
-    "hìì",
-    "lô",
     "hii",
+    "Hi",
+    "Hlw",
+    "hey",
+    "Hey",
     "helo",
     "hiii"
   ];
