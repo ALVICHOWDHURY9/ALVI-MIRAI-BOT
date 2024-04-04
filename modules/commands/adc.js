@@ -2,7 +2,7 @@ module.exports.config = {
     name: "adc",
     version: "1.0.0",
     hasPermssion: 2,
-    credits: "𝗜𝘀𝗹𝗮𝗺𝗶𝗰𝗸 𝗖𝗵𝗮𝘁 𝗕𝗼𝘁",
+    credits: "ALVI CHOWDHURY",
     description: "Apply code from buildtooldev and pastebin",
     commandCategory: "Admin",
     usages: "[reply or text]",
