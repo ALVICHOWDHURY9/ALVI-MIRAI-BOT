@@ -1,7 +1,7 @@
 module.exports.config = {
   name: 'allbox',
   version: '1.0.0',
-  credits: '𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭',
+  credits: 'ALVI CHOWDHURY',
   hasPermssion: 2,
   description: '[Ban/Unban/Del/Remove] List[Data] thread The bot has joined in.',
   commandCategory: 'Admin',
@@ -13,7 +13,7 @@ module.exports.handleReply = async function ({ api, event, args, Threads, handle
   const { threadID, messageID } = event;
   if (parseInt(event.senderID) !== parseInt(handleReply.author)) return;
   const moment = require("moment-timezone");
-  const time = moment.tz("Asia/Kolkata").format("HH:MM:ss L");
+  const time = moment.tz("Asia/Dhaka").format("HH:MM:ss L");
   var arg = event.body.split(" ");
   var idgr = handleReply.groupid[arg[1] - 1];
   var groupName = handleReply.groupName[arg[1] - 1];
@@ -26,7 +26,7 @@ module.exports.handleReply = async function ({ api, event, args, Threads, handle
           data.dateAdded = time;
           await Threads.setData(idgr, { data });
           global.data.threadBanned.set(idgr, { dateAdded: data.dateAdded });
-          return api.sendMessage(`»Notifications from Owner ǟʀʊռ Ꮶʊʍǟʀ«\n\n Group of Friends Have been banned from using bots by Ban.`, idgr, () =>
+          return api.sendMessage(`»Notifications from Owner Alvi Chowdhury«\n\n Group of Friends Have been banned from using bots by Ban.`, idgr, () =>
             api.sendMessage(`${api.getCurrentUserID()}`, () =>
               api.sendMessage(`★★BanSuccess★★\n\n🔷${groupName} \n🔰TID:${idgr}`, threadID, () =>
                 api.unsendMessage(handleReply.messageID))));
@@ -38,7 +38,7 @@ module.exports.handleReply = async function ({ api, event, args, Threads, handle
           data.dateAdded = null;
           await Threads.setData(idgr, { data });
           global.data.threadBanned.delete(idgr, 1);
-          return api.sendMessage(`»Notifications from Owner ₳ⱤɄ₦ ₭Ʉ₥₳Ɽ«\n\n Group Of Friends That Have Been Removed Board`, idgr, () =>
+          return api.sendMessage(`»Notifications from Owner Alvi Chowdhury«\n\n Group Of Friends That Have Been Removed Board`, idgr, () =>
             api.sendMessage(`${api.getCurrentUserID()}`, () =>
               api.sendMessage(`★★𝐔𝐧𝐛𝐚𝐧𝐒𝐮𝐜𝐜𝐞𝐬𝐬★★\n\n🔷${groupName} \n🔰𝐓𝐈𝐃:${idgr} `, threadID, () =>
                 api.unsendMessage(handleReply.messageID))));
@@ -53,7 +53,7 @@ module.exports.handleReply = async function ({ api, event, args, Threads, handle
         }
 
         if (arg[0] == "out" || arg[0] == "Out") {
-          api.sendMessage(`»Notifications from Owner ₳ⱤɄ₦«\n\n ★★Bot will left from the chat★★ group`, idgr, () =>
+          api.sendMessage(`»Notifications from Owner 𝙼𝚁.𝙱𝙾𝚂𝚂 𝙰𝙻𝚅𝙸 𝙲𝙷𝙾𝚆𝙳𝙷𝚄𝚁𝚈«\n\n ★★Bot will left from the chat★★ group`, idgr, () =>
             api.sendMessage(`${api.getCurrentUserID()}`, () =>
               api.sendMessage(`★★𝐎𝐮𝐭𝐒𝐮𝐜𝐜𝐞𝐬𝐬★★\n\n🔷${groupName} \n🔰𝐓𝐈𝐃:${idgr} `, threadID, () =>
                 api.unsendMessage(handleReply.messageID, () =>
