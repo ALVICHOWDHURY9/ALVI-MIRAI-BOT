@@ -1,8 +1,8 @@
 module.exports.config = {
-  name: "anhdaden",
+  name: "uganda",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "BLACK",
+  credits: "Alvi",
   description: "White brother :v",
   commandCategory: "text-image",
   usages: "[text 1] | [text 2]",
