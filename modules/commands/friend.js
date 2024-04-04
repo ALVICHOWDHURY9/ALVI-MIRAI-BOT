@@ -2,7 +2,7 @@ module.exports.config = {
     name: "friend",
     version: "7.3.1",
     hasPermssion: 0,
-    credits: " deep",///don't change my Credit Coz i Edit 
+    credits: "ALVI",///don't change my Credit Coz i Edit 
     description: "Get Pair From Mention",
     commandCategory: "img",
     usages: "[@mention]",
@@ -69,6 +69,6 @@ module.exports.run = async function ({ event, api, args }) {
     if (!mention[0]) return api.sendMessage("Please mention 1 person.", threadID, messageID);
     else {
         const one = senderID, two = mention[0];
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "╔═══❖••° °••❖═══╗", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n—🌸💚–//সম্পর্কের”নাম”যাই হোক” না কেন–💙🌼.🖤🥀মন খারাপের সময় যে” /পাশে থাকে🌺🌼“🌺💞সেই প্রিয় ” মানুষ ❥━➸➽❥🖤🪽\n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
       }
