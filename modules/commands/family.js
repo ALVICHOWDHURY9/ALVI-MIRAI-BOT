@@ -65,7 +65,7 @@ module.exports.circle = async (image) => {
   var l = parseInt(size/15), x = parseInt(l), y = parseInt(200), xcrop = parseInt(live.length*size), ycrop = parseInt(200+size);
   size = size-l*2;
   /*================CREATE PATH AVATAR===============*/
-  api.sendMessage(`<<Please Wait >> \n🍗Intended photo: ${participantIDs.length}\n🍠Size background: ${bgX} x ${bgY}\n🥑Size Avatar: ${size}\n🥪Color: ${color}`,threadID, messageID);
+  api.sendMessage(`╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n<<Please Wait >> \n🍗Intended photo: ${participantIDs.length}\n🍠Size background: ${bgX} x ${bgY}\n🥑Size Avatar: ${size}\n🥪Color: ${color}\n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯`,threadID, messageID);
   var pathAVT = (__dirname+`/cache/${Date.now()+10000}.png`)
   /*=================DRAW AVATAR MEMBERS==============*/
     for(let idUser of live) {
@@ -97,7 +97,7 @@ module.exports.circle = async (image) => {
     cutImage.crop(0, 0, xcrop, ycrop+l-30).writeAsync(pathAVT);
     await delay(300);
     /*====================SEND IMAGE==================*/ 
-    return api.sendMessage({body: `🍗Number of members: ${i}\n🥪Size background: ${bgX} x ${bgY}\n🍠Filter ${participantIDs.length-i} Facebook Users`, attachment: fs.createReadStream(pathAVT)}, threadID, (error, info) =>{
+    return api.sendMessage({body: `╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n🍗Number of members: ${i}\n🥪Size background: ${bgX} x ${bgY}\n🍠Filter ${participantIDs.length-i} Facebook Users\n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯`, attachment: fs.createReadStream(pathAVT)}, threadID, (error, info) =>{
       if (error) return api.sendMessage(`Something went wrong ${error}`, threadID, () => fs.unlinkSync(pathAVT), messageID)
       console.log('Successful photo submission'); 
       fs.unlinkSync(pathAVT) }, messageID); 
