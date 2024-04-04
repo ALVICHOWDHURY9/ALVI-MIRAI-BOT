@@ -2,7 +2,7 @@ module.exports.config = {
   name: "statusvideo",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Modded By Arun",
+  credits: "Modded By Alvi",
   description: "RANDOM Status video",
   commandCategory: "Random video",
   usages: "Statusvideo",
