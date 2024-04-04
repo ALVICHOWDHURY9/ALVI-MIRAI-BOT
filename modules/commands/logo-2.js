@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "fram",
+    name: "logov2",
     version: "7.3.1",
     hasPermssion: 0,
     credits: "Arun Kumar",///don't change my Credit Coz i Edit 
