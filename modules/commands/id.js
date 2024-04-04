@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "id",
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "Ibne Ariyan Marjan",
+	credits: "ALVI CHOWDHURY",
 	description: "Get The User Id",
 	commandCategory: "Công cụ",
 	cooldowns: 0
