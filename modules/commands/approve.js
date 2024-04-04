@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "approve",
 	version: "1.0.2",
 	hasPermssion: 2,
-	credits: "ALVI CHOWDHURY",
+	credits: "DungUwU mod by Nam",
 	description: "approve the gc using bots xD",
 	commandCategory: "Admin",
     cooldowns: 5
@@ -99,7 +99,7 @@ module.exports.run = async ({ event, api, args, Threads, handleReply, Users }) =
     	}, messageID)
     }
     else if (isNaN(parseInt(idBox))) api.sendMessage("[ ERR ] The ID you entered is not valid", threadID, messageID);
-    else if (data.includes(idBox)) api.sendMessage(`[ - ] ID ${idBox} pre-approved!`, threadID, messageID);
+    else if (data.includes(idBox)) api.sendMessage(`[ - ] ID ${idBox} Ye Group Pehle se-approved Hai!`, threadID, messageID);
    	else api.sendMessage("╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\nআপনার গ্রুপ এ approved করে দিলাম তো 😇😌\n\n সুতরাং আমার রোবোট টি ভালো করে চালান 🌸❤️\nআসা করি আমার বট টি দিয়ে কনো খারাপ কাজ করবেন নাহ \n\n যে কোনো সমস্যা হলে আমার বস আলভী চৌধুরী'র সাথে যোগাযোগ করতে পারেন \n\n ◑ হোয়াটসঅ্যাপ ☞ wa.me/+60135647836 \n◑ ইন্সট্রাগ্রাম লিংক --> https://www.instagram.com/alvixhowdhury420 🐰😗 \n◑ ফেসবুক লিংক ☞ https://www.facebook.com/PINIK.MR.ALVI.CHOWDHURY.YOUR.NEXT.VATAR.XAN \n\n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯", idBox, (error, info) => {
    		api.changeNickname(` 〖 ${global.config.PREFIX} 〗 ➺ ${(!global.config.BOTNAME) ? "" : global.config.BOTNAME}`, idBox, global.data.botID);
       const axios = require('axios');
@@ -117,7 +117,7 @@ module.exports.run = async ({ event, api, args, Threads, handleReply, Users }) =
 	let callback = function () {
       api.sendMessage({body: `❒❒ BOT ARE NOW CONNECTED ❒❒\n=====================\n┏━━━━ 🖤 ━━━━┓
   𝐌𝐑. 𝐀𝐋𝐕𝐈 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘࿐ 
-┗━━━    🖤 ━━━━┛\n=====================\n➪BOT: ${global.config.BOTNAME}\n➪ Prefix: ${global.config.PREFIX}\n➪ Users: ${global.data.allUserID.length}\n Groups: ${global.data.allThreadID.length}\n=====================\n[]---------------------------------------[]\nUse '${global.config.PREFIX}Help' T0o View The Commands That Available!\n[]---------------------------------------[]\n⌨ Made by: ${firstname}\n`, mentions: [{
+┗━━━    🖤 ━━━━┛\n=====================\n➪BOT: ${global.config.BOTNAME}\n➪ Prefix: ${global.config.PREFIX}\n➪ Users: ${global.data.allUserID.length}\n➪ Groups: ${global.data.allThreadID.length}\n=====================\n[]---------------------------------------[]\nUse '${global.config.PREFIX}Help' T0o View The Commands That Available!(ღ˘⌣˘ღ)\n[]---------------------------------------[]\n⌨ Made by: ${firstname}\n`, mentions: [{
                            tag: firstname,
                            id: admID,
                            fromIndex: 0,
@@ -132,7 +132,7 @@ module.exports.run = async ({ event, api, args, Threads, handleReply, Users }) =
    		else {
    			data.push(idBox);
    			fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
-   			api.sendMessage(`[ OK ] Successfully Approved 😌:\n${idBox}`, threadID, () => {
+   			api.sendMessage(`[ OK ] Successfully Approved The Box (◕‿◕):\n${idBox}`, threadID, () => {
           dataP.splice(dataP.indexOf(idBox), 1);
     		fs.writeFileSync(dataPending, JSON.stringify(dataP, null, 2));
     	}, messageID)
