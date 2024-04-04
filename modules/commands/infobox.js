@@ -110,7 +110,7 @@ if(!fs.existsSync(__dirname+`${fonts}`)) {
   let baseAvata3 = await loadImage(avataruser3);
   let canvas = createCanvas(baseImage.width, baseImage.height);
   let ctx = canvas.getContext("2d");
-  let text = args.join(" ") || threadName
+  let text = args.join("alvi") || threadName
   let id = threadInfo.threadID;
   ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
   ctx.drawImage(baseAva, 80, 73, 285, 285);
