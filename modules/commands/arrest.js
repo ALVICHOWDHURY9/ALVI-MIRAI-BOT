@@ -2,7 +2,7 @@ module.exports.config = {
     name: "arrest",
     version: "2.0.0",
     hasPermssion: 0,
-    credits: "Mr Chand",
+    credits: "Alvi Chowdhury",
     description: "Arrrest a friend you mention",
     commandCategory: "tagfun",
     usages: "[mention]",
@@ -70,7 +70,7 @@ module.exports.run = async function ({ event, api, args }) {
     if (!mention) return api.sendMessage("Please mention 1 Person", threadID, messageID);
     else {
         var one = senderID, two = mention;
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "Congratulations on entering the state payroll " + tag + '\n Wish you happy',
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n—হালা গরু চোর তোরে আজকে হাতে নাতে ধরছি পালাবি কই_😸💁‍♀️" + tag + '\n\n\n𝗠𝗔𝗗𝗘 𝗕𝗬:\n            𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯',
             mentions: [{
           tag: tag,
           id: mention
