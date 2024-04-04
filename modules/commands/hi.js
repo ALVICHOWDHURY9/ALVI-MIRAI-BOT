@@ -2,7 +2,7 @@ module.exports.config = {
   name: "hi",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Sam but fixed by Arun(ind time)",
+  credits: "Sam but fixed by Alvi(ind time)",
   description: "hi gửi sticker",
   commandCategory: "QTV BOX",
   usages: "[text]",
