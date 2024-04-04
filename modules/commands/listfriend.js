@@ -2,7 +2,7 @@ module.exports.config = {
   name: "listfriend",
   version: "1.0.0",
   hasPermssion: 2,
-  credits: "ManhG",
+  credits: "ALVI",
   description: "View friends information/Delete friends by replying",
   commandCategory: "System",
   usages: "",
