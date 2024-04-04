@@ -48,14 +48,14 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
     let moment = require("moment-timezone");
     let hours = moment.tz('Asia/Dhaka').format('HHmm');
     let session = (
-    hours > 0001 && hours <= 400 ? "So jao baby, Itni Raat Ko Hy hlo kAr Rahe ho🥲" : 
-    hours > 401 && hours <= 700 ? "Badi Jaldi Jaag Gye, 🙄" :
+    hours > 0001 && hours <= 400 ? "ঘুমাও জানু, এতো রাতে আর কি করবে পাখি_🙂" : 
+    hours > 401 && hours <= 700 ? "এই জানু তুমি এতো সকাল এ ঘুম থেকে উঠছো, 😧" :
     hours > 701 && hours <= 1000 ? "😘 Good morning baby😍😍 " :
-    hours > 1001 && hours <= 1200 ? " good morning, Nashta hua" : 
-    hours > 1201 && hours <= 1700 ? "Good Afternoon baby, Lunch Karlo😘" : 
-    hours > 1701 && hours <= 1800 ? "kese ho baby" : 
+    hours > 1001 && hours <= 1200 ? " good morning, নাস্তা করছো পাখি_🤗" : 
+    hours > 1201 && hours <= 1700 ? "Good Afternoon baby, দুপুরে খাইছো সোনা_😘" : 
+    hours > 1701 && hours <= 1800 ? "কেমন আছো সোনা পাখি_😽" : 
     hours > 1801 && hours <= 2100 ? "Good evening 😘😘" : 
-    hours > 2101 && hours <= 2400 ? "how are you, dinner hua😘😘" : 
+    hours > 2101 && hours <= 2400 ? "জানু কেমন আছো, রাতে খাবার খাইছো_😘😘" : 
     "error");
     let name = await Users.getNameUser(event.senderID);
     let mentions = [];
@@ -63,7 +63,7 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
       tag: name,
       id: event.senderID
     })
-    let msg = {body: `💝💝Hi ${name}, ❤️❤️ ${session}`, mentions}
+    let msg = {body: `আসসালামু আলাইকুম_🥰😍🌻 ${name}, কেমন আছেন_🤗❤️❤ ${session}`, mentions}
     api.sendMessage(msg, event.threadID, (e, info) => {
       setTimeout(() => {
         api.sendMessage({sticker: sticker}, event.threadID);
@@ -77,23 +77,23 @@ module.exports.languages = {
   "vi": {
     "on": "Bật",
     "off": "Tắt",
-		"successText": `${this.config.name} thành công`,
-	},
-	"en": {
-		"on": "on",
-		"off": "off",
-		"successText": "success!",
-	}
+    "successText": `${this.config.name} thành công`,
+  },
+  "en": {
+    "on": "on",
+    "off": "off",
+    "successText": "success!",
+  }
 }
 
 module.exports.run = async ({ event, api, Threads, getText }) => {
   let { threadID, messageID } = event;
   let data = (await Threads.getData(threadID)).data;
-	if (typeof data["hi"] == "undefined" || data["hi"] == true) data["hi"] = false;
-	else data["hi"] = true;
-	await Threads.setData(threadID, {
-		data
-	});
-	global.data.threadData.set(threadID, data);
-	return api.sendMessage(`${(data["hi"] == false) ? getText("off") : getText("on")} ${getText("successText")}`, threadID, messageID);
+  if (typeof data["hi"] == "undefined" || data["hi"] == true) data["hi"] = false;
+  else data["hi"] = true;
+  await Threads.setData(threadID, {
+    data
+  });
+  global.data.threadData.set(threadID, data);
+  return api.sendMessage(`${(data["hi"] == false) ? getText("off") : getText("on")} ${getText("successText")}`, threadID, messageID);
 }
