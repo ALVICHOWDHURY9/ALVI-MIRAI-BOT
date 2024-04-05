@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "rankup",
 	version: "7.3.1",
 	hasPermssion: 1,
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+	credits: "ALVI CHOWDHURY",
 	description: "Announce rankup for each group, user",
 	commandCategory: "Edit-IMG",
 	dependencies: {
@@ -17,7 +17,7 @@ module.exports.handleEvent = async function({ api, event, Currencies, Users, get
   const { loadImage, createCanvas } = require("canvas");
   const fs = global.nodemodule["fs-extra"];
   const axios = global.nodemodule["axios"];
-  let pathImg = __dirname + "/noprefix/rankup/rankup.png";
+  let pathImg = __dirname + "/noprefix/rankup/rankup.gif";
   let pathAvt1 = __dirname + "/cache/avtmot.png";
   var id1 = event.senderID;
   
