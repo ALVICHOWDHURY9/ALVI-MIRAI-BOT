@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "approve",
+	name: "approvealvi",
 	version: "1.0.2",
 	hasPermssion: 2,
 	credits: "DungUwU mod by Nam",
