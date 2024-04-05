@@ -28,7 +28,7 @@ module.exports.run = async ({ event, api, args, Threads }) => {
     else {
         for (const idThread of allThread) {
             const threadSetting = global.client.threadData.get(idThread.threadID) || {};
-            api.changeNickname(`[ ${(threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "MrTomXxX" : global.config.BOTNAME}`, idThread.threadID, idBot, (err) => (err) ? threadError.push(idThread.threadID) : '');
+            api.changeNickname(`[ ${(threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "🌺༅•─༅𝐌𝐑.𝐁𝐎𝐒𝐒-𝐀𝐋𝐕𝐈-𝐁𝐎𝐓༅─•༅🌺" : global.config.BOTNAME}`, idThread.threadID, idBot, (err) => (err) ? threadError.push(idThread.threadID) : '');
             count+=1;
             await new Promise(resolve => setTimeout(resolve, 500));
         }
