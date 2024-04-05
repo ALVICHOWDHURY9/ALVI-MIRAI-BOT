@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "trans",
 	version: "1.0.1",
 	hasPermssion: 0,
-	credits: "𝐃𝐚𝐫𝐤 𝐑𝐮𝐥𝐞𝐱 𝐊𝐢𝐧𝐠 𝐀𝐧𝐮𝐩",
+	credits: "ALVI CHOWDHURY",
 	description: "Text translation",
 	commandCategory: "media",
 	usages: "[en/ko/ja/vi] [Text]",
