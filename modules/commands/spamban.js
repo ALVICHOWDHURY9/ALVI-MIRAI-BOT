@@ -43,7 +43,7 @@ module.exports.handleEvent = async function ({ Users, Threads, api, event})  {
     if (global.client.autoban[senderID].number >= num) {
       var namethread = datathread.threadName;
       const moment = require("moment-timezone");
-      const timeDate = moment.tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss");
+      const timeDate = moment.tz("Asia/Dhaka").format("DD/MM/YYYY HH:mm:ss");
       let dataUser = await Users.getData(senderID) || {};
       let data = dataUser.data || {};
       if (data && data.banned == true) return;
