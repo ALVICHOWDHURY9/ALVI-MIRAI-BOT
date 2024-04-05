@@ -2,7 +2,7 @@ module.exports.config = {
   name: "password",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "tdunguwu",
+  credits: "Alvi",
   description: "",
   commandCategory: "GAME",
   usages: "[text 1] | [text 2]",
