@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "rankup",
 	version: "7.3.1",
 	hasPermssion: 1,
-	credits: "ALVI CHOWDHURY",
+	credits: "John Lester",
 	description: "Announce rankup for each group, user",
 	commandCategory: "Edit-IMG",
 	dependencies: {
