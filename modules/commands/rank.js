@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "rankupauto",
+  name: "rankup",
   version: "7.6.8",
   hasPermssion: 1,
   credits: "Kreysh",
