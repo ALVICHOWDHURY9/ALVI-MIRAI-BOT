@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "hindi",
 	version: "1.0.1",
 	hasPermssion: 0,
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+	credits: "ALVI CHOWDHURY",
 	description: "Text translation",
 	commandCategory: "media",
 	usages: "[Text]",
