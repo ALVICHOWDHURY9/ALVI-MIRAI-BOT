@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "pair3",
+	name: "pairv3",
 	version: "1.0.1",
 	hasPermssion: 0,
 	credits: "ProCoderCyrus",
@@ -77,5 +77,5 @@ module.exports.run = async function({ api, event, args, models, Users, Threads, 
         var sex = await data[id].gender;
         var gender = sex == 2 ? "Male🧑" : sex == 1 ? "Female👩‍🦰" : "Trần Đức Bo";
 var one = senderID, two = id;
-    return makeImage({ one, two }).then(path => api.sendMessage({ body: `🍓 Congratulations ${namee} was paired with ${name}\n🍓 The Double Odds are: ${tle}`, mentions: arraytag, attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+    return makeImage({ one, two }).then(path => api.sendMessage({ body: `╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n🍓 Congratulations ${namee} was paired with ${name}\n🍓 The Double Odds are: ${tle}\n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯`, mentions: arraytag, attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
   }
