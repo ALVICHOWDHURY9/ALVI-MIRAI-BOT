@@ -17,7 +17,7 @@ module.exports.run = async function({ api,event,args,client,Users,Threads,__GLOB
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-var link = ["https://i.imgur.com/UVABL3p.jpg"];
+var link = ["https://i.imgur.com/ZIx11LV.jpeg"];
 var callback = () => api.sendMessage({body:`
 {
 	"name": "ALVI",
