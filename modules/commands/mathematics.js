@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "mathematics",
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "kudos",
+	credits: "ALVI",
 	description: "",
 	commandCategory: "Study, learn more, learn forever",
 	cooldowns: 0
