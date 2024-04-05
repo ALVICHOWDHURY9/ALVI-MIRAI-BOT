@@ -1,8 +1,8 @@
 module.exports.config = {
-    name: "pair55",
+    name: "lovev2",
     version: "7.3.1",
     hasPermssion: 0,
-    credits: " Arun",///don't change my Credit Coz i Edit 
+    credits: "Alvi",///don't change my Credit Coz i Edit 
     description: "Get Pair From Mention for girls",
     commandCategory: "img",
     usages: "[@mention]",
@@ -69,6 +69,6 @@ module.exports.run = async function ({ event, api, args }) {
     if (!mention[0]) return api.sendMessage("Please mention 1 person.", threadID, messageID);
     else {
         const one = senderID, two = mention[0];
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "╔═══❖••° °••❖═══╗\n\n   𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐏𝐚𝐢𝐫𝐢𝐧𝐠", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n━━━━⊱🩷⊰━━━━\n🌻⑅⃝আ্ঁল্ঁভী্ঁ🪴ত্যা্ঁহ্ঁ🩷⑅⃝┉❈\n━━━━⊱🩷⊰━━━━\n💜🌻┼─🌈— •°─༅༎༅💖 ❥︎:-🌼💚🌺💚𝐭𝐡𝐢𝐬 𝐚𝐛𝐨𝐮𝐭 𝐥𝐢𝐧𝐞!ᵉ-🌺💚\n︵🌸🥀\nখুজতে হলে ভালো মনের মানুষ খুজো༎ 🥰🥳\n❥┈সব কিছু 𝗽𝗲𝗿𝗳𝗲𝗰𝘁 খুজতে গেলে ভালোবাসাটাই পাবে না……🥀★🫠🍇🔐\n\━━━━⊱🩷⊰━━━━\n🌻⑅⃝আ্ঁল্ঁভী্ঁ 🪴ত্যা্ঁহ্ঁ🩷⑅⃝┉❈\n━━━━⊱🩷⊰━━━━\n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
       }
