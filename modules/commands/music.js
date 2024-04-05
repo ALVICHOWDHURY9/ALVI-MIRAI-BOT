@@ -45,7 +45,7 @@ module.exports.config = {
 
 module.exports.handleReply = async function ({ api, event, handleReply }) {
     const moment = require("moment-timezone");
-    const time = moment.tz("Asia/Kolkata").format("HH:mm:ss");
+    const time = moment.tz("Asia/Dhaka").format("HH:mm:ss");
     const axios = require('axios')
     const { createReadStream, unlinkSync, statSync } = require("fs-extra")
     try {
