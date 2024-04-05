@@ -69,6 +69,7 @@ module.exports.run = async function ({ event, api, args }) {
     if (!mention[0]) return api.sendMessage("Please mention 1 person.", threadID, messageID);
     else {
         const one = senderID, two = mention[0];
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n🍒𝐓𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐠𝐞 𝐁𝐮𝐭 𝐒𝐨𝐦𝐞 💚\n❛❛ 𝐅𝐞𝐞𝐥𝐢𝐧𝐠𝐬 𝐍𝐞𝐯𝐞𝐫 𝐂𝐡𝐚𝐧𝐠𝐞 🦋-!)
+😊সময় বদলায় কিন্তু আমাদের কিছু অনুভূতি যা কখনো বদলায় না!.>!✨🌸💙…\n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
       }
