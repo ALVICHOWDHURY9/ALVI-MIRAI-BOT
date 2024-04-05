@@ -2,7 +2,7 @@ module.exports.config = {
   name: "pairv2",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Purv",
+  credits: "ALVI",
   description: "Pairing",
   commandCategory: "love",
   usages: "pair2",
@@ -40,6 +40,6 @@ module.exports.run = async function({ api, event, args, Threads, Users, Currenci
               imglove.push(fs.createReadStream(__dirname + "/cache/giflove.png"));
               imglove.push(fs.createReadStream(__dirname + "/cache/avt2.png"));
 
-        var msg = {body: `🥰Successful pairing!\n💌Wish you two hundred years of happiness\n💕Double ratio: ${tle}%\n`+namee+" "+"💓"+" "+name, mentions: arraytag, attachment: imglove}
+        var msg = {body: `╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n🥰Successful pairing!\n💌Wish you two hundred years of happiness\n💕Double ratio: ${tle}% \n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯\n\n`+namee+" "+"💓"+" "+name, mentions: arraytag, attachment: imglove}
         return api.sendMessage(msg, event.threadID, event.messageID)
 }
