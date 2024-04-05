@@ -1,8 +1,8 @@
 module.exports.config = {
-    name: "jodi",
+    name: "framev7",
     version: "7.3.1",
     hasPermssion: 0,
-    credits: " Arun",///don't change my Credit Coz i Edit 
+    credits: "Alvi",///don't change my Credit Coz i Edit 
     description: "Get Pair From Mention",
     commandCategory: "img",
     usages: "[@mention]",
