@@ -3,7 +3,7 @@ const request = require("request");
 const fs = require("fs")
 const axios = require("axios")
 module.exports.config = {
-  name: "slap2",
+  name: "slapv2",
   version: "3.0.0",
   hasPermssion: 0,
   credits: `${mysterious}`,
