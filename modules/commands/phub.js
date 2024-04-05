@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "phub",
 	version: "1.0.1",
 	hasPermssion: 0,
-	credits: "MewMew",
+	credits: "ALVI",
 	description: "Comment trên pỏnhub ( ͡° ͜ʖ ͡°)",
 	commandCategory: "Edit-img",
 	usages: "phub [text]",
