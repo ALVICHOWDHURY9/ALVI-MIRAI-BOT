@@ -69,7 +69,7 @@ module.exports.convertHMS = function(value) {
     return (hours != '00' ? hours +':': '') + minutes+':'+seconds;
 }
 module.exports.run = async function ({ api, event, args }) {
-    if (args.length == 0 || !args) return api.sendMessage('» Tutte kahe ke , song ka naam kon likhega!', event.threadID, event.messageID);
+    if (args.length == 0 || !args) return api.sendMessage('» কিরে ভাই গান শুনবি ভলো কথা গানের নাম লেখতে কি কষ্ট হয়😡 এই বার empty!😤\nদিলাম লাগলে আবার কমান্ড কর', event.threadID, event.messageID);
     const keywordSearch = args.join(" ");
     var path = `${__dirname}/cache/1.mp3`
     if (fs.existsSync(path)) { 
