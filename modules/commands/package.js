@@ -20,7 +20,7 @@ const fs = global.nodemodule["fs-extra"];
 var link = ["https://i.imgur.com/UVABL3p.jpg"];
 var callback = () => api.sendMessage({body:`
 {
-	"name": "Arun",
+	"name": "ALVI",
 	"version": "9.9.3",
 	"description": "A simple Facebook Messenger Bot made by me(CatalizCS) and my brother SpermLord don't forget miraiproject.",
 	"main": "mirai.js",
