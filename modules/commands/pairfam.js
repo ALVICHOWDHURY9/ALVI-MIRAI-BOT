@@ -2,7 +2,7 @@
 	name: "fampair",
 	version: "1.0.1",
 	hasPermssion: 0,
-	credits: "MiRRyKaL",
+	credits: "Alvi",
 	description: "pair for boy family",
 	commandCategory: "love",
 	cooldowns: 5,
@@ -78,6 +78,6 @@ async function circle(image) {
          var name1 = (await Users.getData(e)).name
          var name2 = (await Users.getData(r)).name
 var one = senderID, two = e, three = r;
-    return makeImage({ one, two, three }).then(path => api.sendMessage({ body: ` ${nameSender}  ✅ ${name1} ✅ ${name2}\n-${coindown} ❤️’¸`,mentions: arraytag, attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+    return makeImage({ one, two, three }).then(path => api.sendMessage({ body: `╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n\n${nameSender}  ✅ ${name1} ✅ ${name2}\n-${coindown} ❤️’¸\n\n  𝗠𝗥. 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬\n╰──────•◈•───────╯`,mentions: arraytag, attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
       }
