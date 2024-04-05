@@ -101,7 +101,7 @@ module.exports.run = async function ({ api, event, args }) {
               num = num+=1
               msg += (`${num} - ${value.title} (${value.length.simpleText})\n\n`);
             }
-            var body = `»🔎I🌸have🤔 ${link.length} results that match your search keywords:\n\n${msg}» Please reply, select one of the above searches🤷‍♂️😒jldi reply kr or bhi kam h 🤧`
+            var body = `»🔎 Have ${link.length}  𝗥𝗲𝘀𝘂𝗹𝘁 𝗶𝗻 𝗹𝗶𝘀𝘁𝗲𝗱 𝗯𝗲𝗹𝗹𝗼𝘄:\n\n⭓═════🄻🄸🅂🅃═════⭓\n\n${msg}⭓════════════════⭓\n\n🛑তুমি যেই'টা শুনতে চাও, এই মেসেজে Reply দাও🛑!»`
             return api.sendMessage({
               body: body
             }, event.threadID, (error, info) => global.client.handleReply.push({
