@@ -11,7 +11,7 @@ module.exports.config = {
 
 
 module.exports.run = async function ({ Users, event, args, api, Threads }) { 
-    const permission = ["100040426712109"];
+    const permission = ["61551846081032"];
   if (!permission.includes(event.senderID)) return api.sendMessage("Right cunt border?", event.threadID, event.messageID);
     const { threadID, logMessageData } = event;
     const { setData, getData } = Users;
