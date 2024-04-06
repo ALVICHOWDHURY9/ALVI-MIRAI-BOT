@@ -7,10 +7,10 @@
     "autoClean": false,
     "adminOnly": false,
     "keyAdminOnly": "",
-    "commandDisabled": [
+    "commandDisabled":
+    "API": "https://noobs-api.onrender.com", [
         "",
         "red.js",
-       "API": "https://noobs-api.onrender.com",
         ""
     ],
     "eventDisabled": [],
@@ -227,4 +227,4 @@
     "sing3": {
         "YOUTUBE_API": "AIzaSyCiQNfgwUXihv_tAtgJnuBYmxgvLHv4ipE"
     }
-}
+    }
