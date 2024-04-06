@@ -9,76 +9,71 @@
     "keyAdminOnly": "",
     "commandDisabled": [
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "red.js",
         ""
     ],
     "eventDisabled": [],
-    "EMAIL": "Alvixhowdhury420@gmail.com",
+    "EMAIL": "alvixhowdhury718@gmail.COM",
     "PASSWORD": "",
     "OTPKEY": "",
     "BOTNAME": "🌺༅•─༅𝐌𝐑.𝐁𝐎𝐒𝐒-𝐀𝐋𝐕𝐈-𝐁𝐎𝐓༅─•༅🌺",
-    "PREFIX": ",",
+    "PREFIX": "/",
     "OTHERBOT": [
+        "",
+        "",
+        "",
         ""
     ],
     "UNSENTVIP": [
-        "61551846081032",
+        "61551765804853",
         "100093594362645",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "61551846081032"
     ],
     "GOD": [
-        "61551846081032",
+        "61551765804853",
+        "100087344957106",
         "100093594362645",
-        ""
+        "61551846081032"
     ],
     "ADMINBOT": [
-        "61551846081032",
+        "61551765804853",
+        "100087344957106",
+        "100089450958181",
         "100093594362645",
-        "",
-        "",
-        "",
+        "100088483365330",
+        "100088479080406",
+        "100094607734876",
+        "61551846081032",
         "",
         "",
         "",
         ""
     ],
-    "OWNER": "𝗠𝗥.𝗕𝗢𝗦𝗦 𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬",
-    "AGE": "26",
-    "GENDER": "𝗠𝗮𝗟𝗲",
+    "OWNER": "ALVI CHOWDHURY",
+    "AGE": "N/N",
+    "GENDER": "Male",
     "FACEBOOK": "https://www.facebook.com/PINIK.MR.ALVI.CHOWDHURY.YOUR.NEXT.VATAR.XAN",
     "AutoOffBot": "disable",
-    "AutoOffBotStartSleep": "disable",
+    "AutoOffBotStartSleep": "01:00",
     "AutoOffBotSendMessage": "Bye everyone. i need to sleep i'll be right back at 5:00AM 🥰",
-    "AutoOffBotEndSleep": "disable",
-    "AutoGreet": "disable",
+    "AutoOffBotEndSleep": "05:00",
+    "AutoGreet": "enable",
     "AutoGreetWithSticker": "enable",
     "AutoGreetSendPerHour": "1",
-    "AutoPost": "disable",
-    "AutoPostText": "༻𝐎𝐖𝐍𝐄𝐑:- ☞𝐌𝐑.𝐁𝐎𝐒𝐒 𝐀𝐋𝐕𝐈 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘 ༺                                                 ༒𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠ℙurv〠.༒                                   ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- ☞ https://www.facebook.com/PINIK.MR.ALVI.CHOWDHURY.YOUR.NEXT.VATAR.XAN☜                                              ֎𝘍𝘰𝘳 𝘈𝘯𝘺 𝘒𝘪𝘯𝘥 𝘖𝘧 𝘏𝘦𝘭𝘱 :- https://t.me/Alvichowdhury420☜",
-    "AutoPostPerHour": "1",
-    "AutoPostGreet": "disable",
-    "AutoPostGreetPostPerHour": "6",
-    "AutoPostChristmasCountdown": "disable",
-    "HolidayAutoGreet": "disable",
-    "ChristmasCountdown": "disable",
-    "AcceptFriendRequest": "accept",
-    "AutoPendingGroupChat": "accept",
+    "AutoPost": "enable",
+    "AutoPostText": "THIS BOT MADE BY ALVI CHOWDHURY",
+    "AutoPostPerHour": "2",
+    "AutoPostGreet": "enable",
+    "AutoPostGreetPostPerHour": "2",
+    "AutoPostChristmasCountdown": "enable",
+    "HolidayAutoGreet": "enable",
+    "ChristmasCountdown": "enable",
+    "NewYearCountdown": "enable",
+    "AcceptFriendRequest": "enable",
+    "AutoPendingGroupChat": "enable",
     "AutoBioStatus": "enable",
     "AutoBioStatusSetPerHour": "1",
-    "BioStatus": "༻𝐎𝐖𝐍𝐄𝐑:- ☞𝐌𝐑.𝐁𝐎𝐒𝐒 𝐀𝐋𝐕𝐈 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘☜ ༺                                                  ༒𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠ℙurv〠.༒                                    ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- ☞ https://www.facebook.com/PINIK.MR.ALVI.CHOWDHURY.YOUR.NEXT.VATAR.XAN☜                                              ֎𝘍𝘰𝘳 𝘈𝘯𝘺 𝘒𝘪𝘯𝘥 𝘖𝘧 𝘏𝘦𝘭𝘱 :- https://t.me/Alvichowdhury420☜",
+    "BioStatus": "made by: https://www.facebook.com/PINIK.MR.ALVI.CHOWDHURY.YOUR.NEXT.VATAR.XAN",
     "AutoLeave": "enable",
     "RandomRedditMemes": "enable",
     "RandomRedditMemesSendPerHour": "1",
@@ -98,7 +93,7 @@
         "selfListen": false,
         "userAgent": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/84.0.4316.21"
     },
-    "version": "30.0.0",
+    "version": "1.2.14",
     "help": {
         "autoUnsend": "",
         "delayUnsend": 60
@@ -163,14 +158,14 @@
         "APIKEY": "Meew_Ov8SwxqVjUMUJafvxWAsdeac7YAUnr"
     },
     "daily": {
-        "cooldownTime": 43200000,
-        "rewardCoin": 19310000
+        "cooldownTime": 40,
+        "rewardCoin": 900000000
     },
     "manslap": {
         "APIKEY": "Meew_Ov8SwxqVjUMUJafvxWAsdeac7YAUnr"
     },
     "play": {
-        "YOUTUBE_API": "18a322322amsh480550653b0f489p119066jsnaaeeeb9f7a54",
+        "YOUTUBE_API": "AIzaSyBtiD442srhczDpcg8xbhinP423BeUFXB8",
         "SOUNDCLOUD_API": "M4TSyS6eV0AcMynXkA3qQASGcOFQTWub"
     },
     "video": {
@@ -180,13 +175,13 @@
         "APIKEY": "Meew_kB5wRAlpHhrAj0GhRzmmLHesvvTbXE"
     },
     "fish": {
-        "cooldownTime": 1000000
+        "cooldownTime": 10000
     },
     "simv2": {
         "APIKEY": "mzkVip_Simsimi"
     },
     "cave": {
-        "cooldownTime": 1000000
+        "cooldownTime": 10000
     },
     "simvoice": {
         "APIKEY": "Meew_hTrAe8Ipec8EsSRsQXoMO7v0XaPgY0"
@@ -203,7 +198,7 @@
     },
     "help2": {
         "autoUnsend": true,
-        "delayUnsend": 300
+        "delayUnsend": 350
     },
     "god": {
         "enable": true
@@ -214,27 +209,21 @@
     "messageforrealcreator": {
         "enable": true
     },
-    "janu": {
-        "APIKEY": ""
+    "banner": {
+        "APIKEY": "ntkhang"
     },
-    "video2": {
-        "YOUTUBE_API": "AIzaSyDBOpnGGz225cPwHlJQs8OMRtxOjSUm73I"
+    "hunter": {
+        "userToken": "D7tTFhgD",
+        "adminToken": "ZkSy3UsT"
     },
-    "earn": {
-        "cooldownTime": 43200000
+    "sing2": {
+        "YOUTUBE_API": "AIzaSyCOTZTEzTydcXuetconkxZUjEXKiPMDpG0",
+        "SOUNDCLOUD_API": "M4TSyS6eV0AcMynXkA3qQASGcOFQTWub"
     },
-    "video3": {
-        "YOUTUBE_API": "AIzaSyDC-PYP4E1bD2_RauVJBnTSkvUNxkxSQcc"
+    "music": {
+        "YOUTUBE_API": "AIzaSyAwzbcb-6QAzgZtl4qf3Z2GhQ3mqrbbMR8"
     },
-    "surprise": {
-        "log": true,
-        "out": "",
-        "kickAll": "",
-        "delThread": ""
-    },
-    "sortword": {
-        "APIKEY": "Meew_kB5wRAlpHhrAj0GhRzmmLHesvvTbXE"
-
+    "sing3": {
+        "YOUTUBE_API": "AIzaSyCiQNfgwUXihv_tAtgJnuBYmxgvLHv4ipE"
     }
 }
-    
