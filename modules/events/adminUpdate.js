@@ -69,7 +69,7 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
             }
             case "log:thread-icon": {
               let preIcon = JSON.parse(fs.readFileSync(iconPath));
-              dataThread.threadIcon = event.logMessageData.thread_icon || "🤦🏻‍♂";
+              dataThread.threadIcon = event.logMessageData.thread_icon || "💁‍♀️";
                 if (global.configModule[this.config.name].sendNoti) api.sendMessage(`[⚜️] হালারপুত  এতো ইমোজি চেঞ্জ করস কেন [⚜️]\n»  ${event.logMessageBody.replace("emoticon", "icon")}\n» Original Icons: ${preIcon[threadID] || "unclear"}`, threadID, async (error, info) => {
                   preIcon[threadID] = dataThread.threadIcon;
                   fs.writeFileSync(iconPath, JSON.stringify(preIcon));
