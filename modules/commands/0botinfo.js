@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "botinfo",
 	version: "1.0.1", 
 	hasPermssion: 0,
-	credits: "Arun Kumar", //don't change the credits please
+	credits: "Alvi Chowdhury", //don't change the credits please
 	description: " Bot info.",
 	commandCategory: "system",
 	cooldowns: 1,
@@ -22,7 +22,7 @@ const time = process.uptime(),
 		minutes = Math.floor((time % (60 * 60)) / 60),
 		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
-var juswa = moment.tz("Asia/Kolkata").format("『D/MM/YYYY』 【HH:mm:ss】");
+var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【HH:mm:ss】");
 var link =                                     
 ["https://i.postimg.cc/W39vdtG7/20230727-235934.jpg"];
 var callback = () => api.sendMessage({body:`======🄰🄻🅅🄸🄱🄾🅃======\n\n☄️𝘽𝙊𝙏𝙉𝘼𝙈𝙀☄️ »» ${global.config.BOTNAME}\n🌸𝙋𝙍𝙀𝙁𝙄𝙓🌸  »» ${global.config.PREFIX} ««\n\n🥳𝙐𝙋𝙏𝙄𝙈𝙀🥳\n\n𝑫𝑨𝑻𝑬 𝑨𝑵𝑫 𝑻𝑰𝑴𝑬 \n${juswa}\n\n⚡𝘽𝙊𝙏 𝙄𝙎 𝙍𝙐𝙉𝙉𝙄𝙉𝙂⚡ \n🕛${hours}:${minutes}:${seconds}🕧.
